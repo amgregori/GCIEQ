@@ -1,2 +1,0 @@
-# GCIEQ
-GCI Equipment DB

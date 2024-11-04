@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header>Equipment Data</header>
+</br>
+<form action="/eq_edit/{{ eq_piece.eqid }}" method="POST">
+  <fieldset>
+    <legend>Equipment Info</legend>
+
+    <div class="container">
+      <div class="row" style="margin-top: 0px;">
+        <div class="col">
+          <p> Equipment ID: &nbsp {{eq_piece.eqid}}</p>
+        </div>
+        <div class="col">
+          {{eq_piece.yr}}
+        </div>
+        <div class="col">
+          {{eq_piece.make}}
+        </div>
+        <div class="col">
+          {{eq_piece.model}}
+        </div>
+        <div class="col"  style="margin-top: 15px;">
+          {{form.hidden_tag() }}
+          {{form.cat(style="width:200px; height=30px;", value=eq_piece.eqcat)}}  
+        </div>
+
+
+
+        
+    </div>
+  </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+
+
+
+
+
+
+
+
+  <div class="row">
+    <div class="col">
+      {{form.hidden_tag() }}
+      {{form.eqid.label ()}}
+      {{form.eqid(style="width:60px;", value=eq_piece.eqid)}}
+    </div>
+    <div class="col">
+      {{form.hidden_tag() }}
+      {{form.year(style="width:60px;", value=eq_piece.yr)}} 
+    </div>
+    <div class="col">
+      {{form.hidden_tag() }}
+      {{form.make(style="width:200px;", value=eq_piece.make)}} 
+    </div>
+    <div class="col">
+      {{form.hidden_tag() }}
+      {{form.model(style="width:200px;", value=eq_piece.model)}}
+    </div>
+    <div class="col">
+      {{form.hidden_tag() }}
+      {{form.cat(style="width:200px; height=30px;", value=eq_piece.eqcat)}}
+    </div>
+  </div>
+  <div class="shadow p-3 mb-5 bg-body rounded">
+
+    <div class="container">
+      <div class="form-group">
+        <div class="row">
+          <div class="col-lg-5">
+            {{form.hidden_tag() }}
+            {{form.sn.label(style="width:150px; margin-left:50px;text-align:right;")}}
+            {{form.model(style="width:200px; text-align:right;", value=eq_piece.sn)}}
+          </div>
+          <div class="col-sm-2"></div>
+          <div class="col-lg-5">
+            {{form.hidden_tag() }}
+            {{form.purch_meter.label(style="width:150px; margin-left:50px;")}}
+            {{form.model(style="width:200px; text-align:right;", value=eq_piece.purch_meter)}}          
+          </div>
+        </fieldset>
+
+  
+
+
+
+
+
+</form>
+
+       
+
+      
+{% endblock %}
+
+
+
+

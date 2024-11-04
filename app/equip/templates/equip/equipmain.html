@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <head>
+    <title>
+        {{title}}
+    </title>
+  </head>
+  
+  <section>
+   
+    <table id="eq_list" class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Purch. Date</th>
+                <th>Meter</th>
+                <th style="text-align:center">HR / MI</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for piece in eqlist %}
+            <tr>
+                <td><a  href="{{url_for('equip.eq_edit', eqid = piece.eqid)}}">{{piece.eqid}}</a></td>
+                <td>{{piece.make}}</td>
+                <td>{{piece.model}}</td>
+                <td>{{piece.yr}}</td>
+                <td>{{piece.purch_date}}</td>
+                <td style="text-align:right">{{piece.meter_act}}</td>
+                <td style="text-align:center">{{piece.meter_type}}</td>
+                <td>{{piece.eqcat}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+  </section>
+
+
+
+{% endblock %}
+
+{% block scripts %}
+  <script>
+    $(document).ready(function () {
+      $('#eq_list').DataTable({
+        columns: [
+          {orderable: true, searchable: true},
+          {orderable: true, searchable: true},
+          {orderable: true, searchable: true},
+          null,
+          {orderable: true, searchable: true},
+          null,
+          null,
+          null],
+      });
+    });
+  </script>
+{% endblock %}

@@ -1,0 +1,7 @@
+#This blueprint deals with all user management and login functionality
+
+from flask import Blueprint
+
+auth_bp = Blueprint('auth', __name__, template_folder='templates')
+
+from . import views

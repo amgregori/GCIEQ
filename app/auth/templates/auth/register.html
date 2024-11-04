@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %} User Page {% endblock %}
+
+
+
+{% block content %}
+<h1>Main User Registration Page!</h1>
+<h2>Block content goes here. But what will it be?@ Who knows?<h2>
+<br/>
+<br/>
+User List:
+{% for user in list %}
+<ul>
+    <li>{{ user.name_last }}, {{user.name_first}}</li>
+</ul>
+{% endfor %}
+
+<br/>
+<a href="{{url_for('auth.add_user')}}">Add User</a><br/>
+<a href="{{url_for('auth.login')}}">Login</a><br/>
+<a href="{{url_for('main.index')}}">Home</a><br/>
+<a href="{{url_for('jobs.jobs_main')}}">Jobs</a><br/>
+<a href="{{url_for('equip')}}">Equipment</a><br/>
+<a href="{{url_for('auth.dashboard')}}">Dashboard</a><br/>
+{% endblock %}

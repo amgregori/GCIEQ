@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+
+</head>
+
+{% block content %}
+
+{% for message in get_flashed_messages() %}
+
+{{ message }}
+
+{% endfor %}
+<div>
+    <body>
+        <h1>Add User Page</h1>
+
+        {% if name_first %}
+            <h1>Hello, {{name_first}}</h1>
+
+        {% else %}
+            <h1>Enter User Info.</h1>
+             <br/>
+
+             <form method="POST">
+                
+                {{ form.hidden_tag() }}
+                {{form.email.label(class="form-label")}}
+                {{form.email(class="form-control")}}
+                <br/>
+                {{ form.hidden_tag() }}
+                {{form.password.label(class="form-label")}}
+                {{form.password(class="form-control")}}
+                <br/>
+                {{form.submit( class="btn btn-secondary mb-3")}}
+
+             </form>
+
+        {% endif %}
+   
+    
+
+    
+
+    {% for user in user_list %}
+        {{ user.name_last }}, {{ user.name_first }} - {{ user.email }}<br/>
+    {% endfor %}
+
+    <a href="{{url_for('main.index')}}">Home</a>
+    </body>
+</div>
+{% endblock %}
