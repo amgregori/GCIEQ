@@ -17,6 +17,8 @@ class EqData(db.Model):
     meter_type = db.Column(db.String(20))
     loc = db.Column(db.String(100))
     note = db.Column(db.String(1000))
+    cur_depr = db.Column(db.Numeric(6,2))
+    cur_rate = db.Column(db.Numeric(6,2))
 
     def __repr__(self):
         return '<Project: %r>' % self.eqid

@@ -103,21 +103,9 @@ body{
   
 }
 
-.cont {
-  width: 60%;
-  display: flex;
-  background: palegreen;
-  align-self: center;
-  
-  
-}
- 
-
-
-div {
-  background-color: rgb(177, 177, 240);
-  margin: auto; 
-}
-
-
 */
+
+.data-label{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
