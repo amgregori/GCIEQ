@@ -2,77 +2,91 @@
 
 {% block content %}
 
-<fieldset>
-  <legend style="font-family: 'Times New Roman', Times, serif;">Equipment Single-Piece Data</legend>
-    <form action="/eq_edit/{{ eq_piece.eqid }}" method="POST">
-
-
-  <div class="container">
-    <div class="form-control-md mb-3 shadow bg-body rounded">
-      <div class="row">
-        <div class="col" style="min-width: 100px; text-align: center;"><label>ID:</label></div>
-        <div class="col" style="min-width: 100px; text-align: center;"><label>Year:</label></div>
-        <div class="col" style="min-width: 150px; text-align: center;"><label>Make:</label></div>
-        <div class="col" style="min-width: 150px; text-align: center;"><label>Model:</label></div>
-        <div class="col" style="min-width: 250px; padding-right:20px; text-align: center;"><label>Category:</label></div>
-      <div class="row"></div>
-        <div class="col" style="border-style: outset; min-width: 100px; text-align: center;">{{eq_piece.eqid}}</div>
-        <div class="col" style="border-style: outset; min-width: 100px; text-align: right;">{{eq_piece.yr}}</div>
-        <div class="col" style="border-style: outset; min-width: 150px; text-align: right;">{{eq_piece.make}}</div>
-        <div class="col" style="border-style: outset; min-width: 150px; text-align: right;">{{eq_piece.model}}</div>
-        <div class="col" style="min-width: 250px; padding-right:20px;">
-          {{form.hidden_tag() }}
-          {{form.cat(style="width:200px; height=30px; float:right; margin-top: 3px;", value=eq_piece.eqcat)}} </div>
-      </div>
-    </div>
-  
-  
-    
-        <div class="form-control-md mb-3 shadow bg-body rounded">
-          <div class="row">
-            <div class="col-sm-2" style="background-color: rgb(73, 156, 230); min-width: 150px;"></div>
-            <div class="col" style="background-color: antiquewhite; min-width: 150px;">
-              {{form.hidden_tag() }}
-              {{form.sn.label(style="width:150px; text-align:right;")}}
-              {{form.model(style="width:150px; text-align:right; float: right;", value=eq_piece.sn)}}
-            </div>
-            <div class="col" style="background-color: aqua; min-width: 150px;">
-              {{form.hidden_tag() }}
-              {{form.purch_meter.label(style="width:150px; ")}}
-              {{form.model(style="width:150px; text-align:right; float:right", value=eq_piece.purch_meter)}}  
-            </div>
-            <div class="col-sm-2" style="background-color: rgb(73, 156, 230); min-width: 150px;"></div>
+<div class="form-container">
+  <fieldset style="max-width: 1000px; align-items: center; margin: 10px;">
+    <legend style="font-family: 'Times New Roman', Times, serif;">Equipment Single-Piece Data</legend>
+      <form action="/eq_edit/{{ eq_piece.eqid }}" method="POST">
+        <div class="row">
+          <div class="col" style="min-width: 100px; text-align: center;"><label>ID:</label></div>
+          <div class="col" style="text-align: center;"><label>Year:</label></div>
+          <div class="col" style="min-width: 150px; text-align: center;"><label>Make:</label></div>
+          <div class="col" style="min-width: 150px; text-align: center;"><label>Model:</label></div>
+          <div class="col" style="min-width: 250px; padding-right:20px; text-align: center;"><label>Category:</label></div>
+        </div>
+        <div class="row">
+          <div class="col" style="border-style: outset; min-width: 100px; text-align: center;">{{eq_piece.eqid}}</div>
+          <div class="col" style="border-style: outset; min-width: 100px; text-align: right;">{{eq_piece.yr}}</div>
+          <div class="col" style="border-style: outset; min-width: 150px; text-align: right;">{{eq_piece.make}}</div>
+          <div class="col" style="border-style: outset; min-width: 150px; text-align: right;">{{eq_piece.model}}</div>
+          <div class="col" style="min-width: 250px;">
+            {{form.hidden_tag() }}
+            {{form.cat(style="width:200px; height=30px; float:right; margin-top: 3px;", value=eq_piece.eqcat)}} </div>
+        </div>
+      <hr>
+        <div class="row">
+          <div class="col-sm-2" style="background-color: rgb(73, 156, 230); min-width: 150px;"></div>
+          <div class="col" style="background-color: antiquewhite; min-width: 150px;">
+            {{form.hidden_tag() }}
+            {{form.sn.label(style="width:150px; text-align:right;")}}
+            {{form.model(style="width:150px; text-align:right; float: right;", value=eq_piece.sn)}}
           </div>
-        
-          <div class="row">
-            <div class="col-sm-2" style="background-color: rgb(73, 156, 230); min-width: 150px;"></div>
-            <div class="col" style="background-color: antiquewhite; min-width: 150px;">
-              {{form.hidden_tag() }}
-              {{form.purch_price.label(style="width:150px; text-align:right;")}}
-              {{form.model(style="width:150px; text-align:right; float: right;", value=eq_piece.purch_price)}}
-            </div>
-            <div class="col" style="background-color: aqua; min-width: 150px;">
-              {{form.hidden_tag() }}
-              {{form.meter_act.label(style="width:150px; ")}}
-              {{form.model(style="width:150px; text-align:right; float:right", value=eq_piece.meter_act)}}  
-            </div>
-            <div class="col-sm-2" style="background-color: rgb(73, 156, 230); min-width: 150px;"></div>
+          <div class="col" style="background-color: aqua; min-width: 150px;">
+            {{form.hidden_tag() }}
+            {{form.purch_meter.label(style="width:150px; ")}}
+            {{form.model(style="width:150px; text-align:right; float:right", value=eq_piece.purch_meter)}}  
           </div>
-  
-  
+          <div class="col-sm-2" style="background-color: rgb(73, 156, 230); min-width: 150px;"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2" style="background-color: rgb(73, 156, 230); min-width: 150px;"></div>
+          <div class="col" style="background-color: antiquewhite; min-width: 150px;">
+            {{form.hidden_tag() }}
+            {{form.loc.label(style="width:150px; text-align:right;")}}
+            {{form.model(style="width:150px; text-align:right; float: right;", value=eq_piece.loc)}}
           </div>
-  
-          <div class="row">   
-              <div class="col">
-                  <div class="form-group">
-                      Placeholder 08
-                  </div>
-              </div>
+          <div class="col" style="background-color: aqua; min-width: 150px;">
+            {{form.hidden_tag() }}
+            {{form.meter_act.label(style="width:150px; ")}}
+            {{form.model(style="width:150px; text-align:right; float:right", value=eq_piece.meter_act)}}  
           </div>
-      </div>
-    </div>
-
+          <div class="col-sm-2" style="background-color: rgb(73, 156, 230); min-width: 150px;"></div>
+        </div>
+      <hr>
+        <div class="row">
+          <div class="col-sm-2" style="background-color: rgb(73, 156, 230); min-width: 150px;"></div>
+          <div class="col" style="background-color: antiquewhite; min-width: 150px;">
+            {{form.hidden_tag() }}
+            {{form.purch_year.label(style="width:150px; text-align:right;")}}
+            {{form.model(style="width:150px; text-align:right; float: right;", value=eq_piece.purch_year)}}
+          </div>
+          <div class="col" style="background-color: aqua; min-width: 150px;">
+            {{form.hidden_tag() }}
+            {{form.cur_dep.label(style="width:150px; ")}}
+            {{form.model(style="width:150px; text-align:right; float:right", value=eq_piece.cur_dep)}}  
+          </div>
+          <div class="col-sm-2" style="background-color: rgb(73, 156, 230); min-width: 150px;"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2" style="background-color: rgb(73, 156, 230); min-width: 150px;"></div>
+          <div class="col" style="background-color: antiquewhite; min-width: 150px;">
+            {{form.hidden_tag() }}
+            {{form.loc.label(style="width:150px; text-align:right;")}}
+            {{form.model(style="width:150px; text-align:right; float: right;", value=eq_piece.loc)}}
+          </div>
+          <div class="col" style="background-color: aqua; min-width: 150px;">
+            {{form.hidden_tag() }}
+            {{form.meter_act.label(style="width:150px; ")}}
+            {{form.model(style="width:150px; text-align:right; float:right", value=eq_piece.meter_act)}}  
+          </div>
+          <div class="col-sm-2" style="background-color: rgb(73, 156, 230); min-width: 150px;"></div>
+        </div>
+      <!-- </div>
+    </div> -->
+  </form>
 </fieldset>
+
+</div>
+
   </br>
 </br>
 </br>
@@ -113,7 +127,6 @@
 
 
 
-</form>
 
        
 

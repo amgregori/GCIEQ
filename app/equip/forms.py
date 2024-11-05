@@ -19,3 +19,4 @@ class FrmEqData(FlaskForm):
     meter_type = StringField('Meter_Type')
     loc = StringField("Location:")
     note = StringField('Note:')
+    cur_dep = DecimalField("Current Depreciation:")
