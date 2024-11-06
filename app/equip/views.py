@@ -53,6 +53,8 @@ def eq_data():
 
     form.eqid.choices = eqid_list
 
+    
+
 
     return render_template('/equip/eq_data.html', form=form, title=title)
     
@@ -72,6 +74,28 @@ def eq_edit(eqid):
     flash(eq_piece.yr)
 
     form.cat.data = eq_piece.eqcat
+
+    if request.method == "POST":
+
+        eq_piece.note = "Updated"
+        flash(eq_piece.note)
+
+        try:
+            flash(eq_piece.note)
+            db.session.commit()
+
+            return render_template('/equip/eq_data.html', form=form, eq_piece=eq_piece)
+        
+        except:
+
+            return render_template('/equip/eq_data.html', form=form, eq_piece=eq_piece)
+
+
+
+        
+
+
+
 
 
 

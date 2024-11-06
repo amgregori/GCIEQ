@@ -21,3 +21,4 @@ class FrmEqData(FlaskForm):
     note = StringField('Note:')
     cur_depr = DecimalField("Current Depreciation:")
     cur_rate = DecimalField("Current Rate:")
+    submit = SubmitField("Submit Changes")
