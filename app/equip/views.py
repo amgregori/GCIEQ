@@ -1,6 +1,6 @@
 from . import equip_bp
 #from flask_login import login_required
-from flask import render_template, redirect, url_for, flash, request
+from flask import Flask, render_template, redirect, url_for, flash, request
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, PasswordField, DecimalField, DateField, SelectField
 from wtforms.validators import DataRequired
@@ -58,7 +58,7 @@ def eq_data():
 
     return render_template('/equip/eq_data.html', form=form, title=title)
     
-@equip_bp.route('/eq_edit/<eqid>', methods=['GET', 'POST'])
+@equip_bp.route('/equip/eq_edit/<eqid>', methods=['GET', 'POST'])
 def eq_edit(eqid):
     form = FrmEqData()
     title = "Equipment Data"
@@ -67,40 +67,44 @@ def eq_edit(eqid):
 
     eq_cat_l = EqCategory.query.order_by(EqCategory.eqcat)
     eq_cat_list = [cat.eqcat for cat in eq_cat_l]
+    eq_cat = EqCategory.query.order_by(EqCategory.eqcat)
+
     form.cat.choices = eq_cat_list
 
-    flash(eqid)
-    flash(eq_piece.make)
-    flash(eq_piece.yr)
+
 
     form.cat.data = eq_piece.eqcat
 
-    if request.method == "POST":
-
-        eq_piece.note = "Updated"
-        flash(eq_piece.note)
-
-        try:
-            flash(eq_piece.note)
-            db.session.commit()
-
-            
-        
-        except:
-
-            return render_template('/equip/eq_data.html', form=form, eq_piece=eq_piece)
-
-
-
-        
-
-
-
-
-
-
-   
     
 
-    #return render_template('/equip/eq_data.html', form=form, eq_piece=eq_piece, eqid=eqid, eq_cat=eq_cat)
-    return render_template('/equip/eq_data.html', form=form, eq_piece=eq_piece)
+    if request.method == "POST" and form.validate_on_submit():
+
+        #eq_piece.note = form.note.data
+
+        eq_piece.cur_rate = request.form.get('lname')
+        rate = form.note.data()
+
+        
+
+
+
+    
+        try:
+
+            #db.session.commit()           
+            
+
+            #flash(form.cur_depr.data)
+            flash(eq_piece.cur_rate)
+            flash(rate)
+
+
+            return render_template('/equip/eq_data.html', form=form, eq_piece=eq_piece, eqid=eqid, eq_cat=eq_cat)
+        
+        except:
+            flash("Something went wrong.")
+            
+
+
+    return render_template('/equip/eq_data.html', form=form, eq_piece=eq_piece, eqid=eqid, eq_cat=eq_cat)
+    #return render_template('/equip/eq_data.html', form=form, eq_piece=eq_piece)
