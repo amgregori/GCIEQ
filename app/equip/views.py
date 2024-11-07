@@ -84,7 +84,7 @@ def eq_edit(eqid):
             flash(eq_piece.note)
             db.session.commit()
 
-            return render_template('/equip/eq_data.html', form=form, eq_piece=eq_piece)
+            
         
         except:
 

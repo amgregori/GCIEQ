@@ -5,10 +5,11 @@
 <div class="form-container" style="display: flex; justify-content: center; padding:10px">
   <fieldset style="max-width: 1000px; align-items: center; margin: 10px;">
     <legend style="font-family: 'Times New Roman', Times, serif;">Equipment Single-Piece Data
-      <div>{{form.submit(class="btn btn-primary btn-lg")}}</div>
+      
     </legend>
     
       <form action="/eq_edit/{{ eq_piece.eqid }}"  method="POST">
+        <div>{{form.submit(class="btn btn-primary btn-lg")}}</div>
         <div class="row">
           <div class="col data-label" style="min-width: 100px; text-align: center;margin-left: 10px;"><label>ID:</label></div>
           <div class="col data-label" style="text-align: center;"><label>Year:</label></div>
