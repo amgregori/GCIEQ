@@ -22,6 +22,7 @@ def create_app():
     #Configure flask instance
     CONFIG_TYPE = os.getenv('CONFIG_TYPE', default='config.DevelopmentConfig')
     app.config.from_object(CONFIG_TYPE)
+    app.config['SECRET_KEY'] = "Sjh23sui2Swi1"
 
     #Initialize Database:
     db.init_app(app)

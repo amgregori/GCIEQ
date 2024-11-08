@@ -79,13 +79,12 @@ def eq_edit(eqid):
 
     if request.method == "POST" and form.validate_on_submit():
 
-        #eq_piece.note = form.note.data
+        eq_piece.note = form.note.data
 
-        eq_piece.cur_rate = request.form.get('lname')
-        rate = form.note.data()
-
-        
-
+       
+        rate = request.form['note']
+     
+        flash(rate)
 
 
     
@@ -95,15 +94,17 @@ def eq_edit(eqid):
             
 
             #flash(form.cur_depr.data)
-            flash(eq_piece.cur_rate)
-            flash(rate)
+            
+            
 
 
             return render_template('/equip/eq_data.html', form=form, eq_piece=eq_piece, eqid=eqid, eq_cat=eq_cat)
         
         except:
             flash("Something went wrong.")
-            
+    
+    else:
+       flash(form.errors)             
 
 
     return render_template('/equip/eq_data.html', form=form, eq_piece=eq_piece, eqid=eqid, eq_cat=eq_cat)
