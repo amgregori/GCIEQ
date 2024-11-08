@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+  {% block content %}
+
+    {% for message in get_flashed_messages() %}
+      {{ message }}
+    {% endfor %}
+
+<h1>DB Utility Page</h1>
+<br/>
+<br/>
+
+<form method="POST", enctype="multipart/form-data">
+
+    <input type="file" name="JobListFile"/>
+    <input name='dbupdate' type="submit"/><br/>
+
+
+<br/>
+<br/>
+<br/>
+<button type="submit" name="dbfix" value="value"> Fix DB Data Null Numeric Records </button>
+
+</form>
+
+
+
+
+
+
+{% endblock %}
