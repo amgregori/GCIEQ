@@ -17,6 +17,7 @@ from app.models.equip import RMCategory
 
 from .forms import FrmEqData
 
+from datetime import datetime
 
 
 
@@ -78,28 +79,26 @@ def eq_edit(eqid):
     
 
     if request.method == "POST" and form.validate_on_submit():
-
+              
+        eq_piece.yr = str(form.year.data)
+        eq_piece.make = form.make.data
+        eq_piece.model = form.model.data
+        eq_piece.eqcat = request.form['cat']
         eq_piece.note = form.note.data
+        eq_piece.sn = form.sn.data
+        eq_piece.loc = form.loc.data
+        eq_piece.purch_meter = form.purch_meter.data
+        eq_piece.cur_meter = form.meter_act.data
+        eq_piece.purch_date = datetime.strptime(str(form.purch_date.data), "%Y-%m-%d")
+        eq_piece.purch_price = form.purch_price.data
+        eq_piece.cur_depr = form.cur_depr.data
+        eq_piece.cur_rate = form.cur_rate.data
 
-       
-        rate = request.form['note']
-     
-        flash(rate)
-
-
-    
+   
         try:
-
-            #db.session.commit()           
-            
-
-            #flash(form.cur_depr.data)
-            
-            
-
-
+            db.session.commit()         
             return render_template('/equip/eq_data.html', form=form, eq_piece=eq_piece, eqid=eqid, eq_cat=eq_cat)
-        
+            
         except:
             flash("Something went wrong.")
     

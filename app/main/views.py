@@ -10,6 +10,8 @@ from app.models.equip import RMCategory
 
 from openpyxl import load_workbook
 
+from datetime import datetime
+
 
 @main_bp.route('/')
 def index():
@@ -36,16 +38,91 @@ def flash01():
     OM = 0
 
     eq_id_list = [eq.eqid for eq in EQList]
-
+    
     for id in eq_id_list:
-        piece = EqData.query.get(id)
+        eq_piece = EqData.query.get_or_404(id)
 
-    for eq_piece in piece:
-        if piece.purch_meter == "":
-            OM = OM + 1
-    flash(OM)    
+        
+        if eq_piece.purch_price == None:
+            eq_piece.purch_price = 0
+            db.session.commit()
+        else:
+            pass
+        
+        if eq_piece.purch_meter == None:
+            eq_piece.purch_meter = 0
+            db.session.commit()
+        else:
+            pass
+        
+        if eq_piece.purch_date == None:
+            eq_piece.purch_date = datetime.strptime("1950-01-01", "%Y-%m-%d")
+            db.session.commit()
+        else:
+            pass
+
+        if eq_piece.meter_act == None:
+            eq_piece.meter_act = 0
+            db.session.commit()
+        else:
+            pass
+
+        if eq_piece.cur_depr == None:
+            eq_piece.cur_depr = 0
+            db.session.commit()
+        else:
+            pass
+
+        if eq_piece.cur_rate == None:
+            eq_piece.cur_rate = 0
+            db.session.commit()
+        else:
+            pass
+
+        if eq_piece.meter_job == None:
+            eq_piece.meter_job = 0
+            db.session.commit()
+        else:
+            pass
+
+        if eq_piece.yr == None:
+            eq_piece.yr = '1900'
+            db.session.commit()
+        else:
+            pass
+
+        if eq_piece.sn == None:
+            eq_piece.sn = '????'
+            db.session.commit()
+        else:
+            pass
+
+        
+            
+    
+   # for id in eq_id_list:
+   #     eq_piece = EqData.query.get_or_404(id)
+   #     flash(eq_piece.cur_depr)
+
+   
+
+
+        
+
+
+    #for eq_piece in piece:
+    #    if piece.purch_meter == "":
+    #        OM = OM + 1
+    #flash(OM)    
 
 
 def flash02():
-    flash('DB Update Button Was Pressed')
+
+    EQList = EqData.query.order_by(EqData.eqid)
+
+    for piece in EQList:
+        flash(piece.purch_date)
+
+
+   
 
