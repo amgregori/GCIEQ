@@ -87,8 +87,8 @@ def eq_edit(eqid):
         eq_piece.note = form.note.data
         eq_piece.sn = form.sn.data
         eq_piece.loc = form.loc.data
-        eq_piece.purch_meter = form.purch_meter.data
-        eq_piece.cur_meter = form.meter_act.data
+        eq_piece.purch_meter = int(form.purch_meter.data)
+        eq_piece.meter_act = int(form.meter_act.data)
         eq_piece.purch_date = datetime.strptime(str(form.purch_date.data), "%Y-%m-%d")
         eq_piece.purch_price = form.purch_price.data
         eq_piece.cur_depr = form.cur_depr.data
