@@ -25,11 +25,11 @@
         <tbody>
             {% for piece in eqlist %}
             <tr>
-                <td><a  href="{{url_for('equip.eq_edit', eqid = piece.eqid)}}">{{piece.eqid}}</a></td>
-                <td>{{piece.make}}</td>
+                <td><a  href="{{url_for('equip.eq_edit', eqid = piece.eqid)}}">{{piece.eq_no}}</a></td>
+                <td>{{piece.desc}}</td>
                 <td>{{piece.model}}</td>
-                <td>{{piece.yr}}</td>
-                <td>{{piece.purch_date}}</td>
+                <td>{{piece.eq_yr}}</td>
+                <td>{{piece.eq_purch_date}}</td>
                 <td style="text-align:right">{{piece.meter_act}}</td>
                 <td style="text-align:center">{{piece.meter_type}}</td>
                 <td>{{piece.eqcat}}</td>

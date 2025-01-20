@@ -5,9 +5,8 @@ from wtforms.validators import DataRequired
 
 
 class FrmEqData(FlaskForm):
-    eqid = StringField('ID:')
-    make = StringField('Make:')
-    model = StringField('Model:')
+    eq_no = StringField('ID:')
+    eq_desc = StringField('Description:')
     year = DecimalField("Year:")
     sn = StringField('Serial Number:')
     cat = SelectField('Category:')

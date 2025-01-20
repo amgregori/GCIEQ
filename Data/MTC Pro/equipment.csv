@@ -1,0 +1,1067 @@
+Equipment,Unit #,Keywords,Meters,Tasks,Inspections
+"AB1 Vermac Arrow Board
+2008 Vermac Arrow Board
+",AB1,"",150 Hours,,""
+"AB2 Vermac Arrow Board
+2006 Vermac Arrow Board
+",AB2,"",150 Hours,,""
+"AG1 Pengo Auger
+Pengo MPT25K 01036A
+",AG1,"",100 Hours,,""
+"AG2 AugerTorque Earth Drill
+2014 AugerTorque 18500-45
+",AG2,"","",,""
+"AG3 McMiller X1975-H2
+2015 McMillen X1975-H2
+",AG3,"","",,""
+"B2 John Deere 410E
+John Deere 410E
+",B2,"","6,414 Hours",,""
+"B3 Caterpillar 430D
+Caterpillar 430D
+",B3,florida,"1,419 Hours",,""
+"BT1 Boat Flat Bottom
+Boat Flat Bottom
+",BT1,"",20 Hours,,""
+"BT2 Mako Boat
+Mako Boat
+",BT2,"","",,""
+"BT3 Boat Flat Bottom
+Boat Flat Bottom
+",BT3,"","",,""
+"BT4 Barge
+2014 Barge Barge
+",BT4,"","",,""
+"BT6 EZ Dock
+2015 Dock EZ Dock
+",BT6,"","",,""
+"BT8 Yamaha outboard Boat Motor F25LWHC
+2023 Yamaha
+",BT8,"","",,""
+"C4 Sullair 185
+Sullair 185
+",C4,"","3,821 Hours",,""
+"C5 Atlas Copco 185
+Atlas Copco 185
+",C5,"","2,621 Hours",,""
+"C6 Kaeser 375
+Kaeser 375
+",C6,"","5,484 Hours",1 due,""
+"C7 Ingersoll Rand P600WCU Air Compressor
+1997 Ingersoll Rand P600WCU
+",C7,"","4,508 Hours",,""
+"C8 Atlas Copco 185 Air Compressor
+2015 Atlas Copco XAS 185 CD 7
+",C8,"","1,419 Hours",,""
+"C9 Atlas Copco 185 Air Compressor
+2015 Atlas Copco XAS 185 CD 7
+",C9,florida,518 Hours,,""
+"D02 John Deere 450C Bulldozer
+1979 John Deere 450C
+",D02,"","2,276 Hours",7 due,""
+"D04 John Deere 700JXT Bulldozer
+John Deere 700JXT
+",D04,"","7,555 Hours",4 due,""
+"D05 4 cyl Cat Dozer
+1966 Caterpillar D7 E
+",D05,"","",,""
+"D06 Caterpillar D7 F Bulldozer
+Caterpillar D7 F
+",D06,"","",5 due,""
+"D08 John Deere 650K
+2020 John Deere 650K
+",D08,"","1,798 Hours",1 due,""
+"D09 CAT D3 LGP Tractor
+CAT D3K2LGPCAB
+",D09,florida,"2,502 Hours",,""
+"D10
+2020 John Deere 700L
+",D10,"","2,092 Hours",,""
+"D11 Komatsu D51EX-24 Dozer
+2022 Komatsu D51EX-24
+",D11,"","1,061.8 Hours",6 due,""
+"DA1 Rivinius Spreader Box
+1995 Rivinius R600B Spreader Box
+",DA1,"","",,""
+"DR1 AA Boring Machine
+2007 American Augers
+",DR1,"",346 Hours,,""
+"DR2 60/72 1000 Split Barbco Boring Machine
+
+",DR2,"",278 Hours,,""
+"DR3
+2022 CZM EK160
+",DR3,"","1,291 Hours",,""
+"DT10 2020 Peterbilt 567 Dump Truck
+2020 Peterbilt 567
+",DT10,"","118,138 Miles
+0 Hours",,""
+"DT11 International log truck
+2000 International Paystar 5000
+",DT11,"","885,702 Miles
+0 Hours",,""
+"DT12 2025 Peterbilt 567 Steel Bed Dump Truck
+2025 Peterbilt 567
+",DT12,"","9,383 Miles
+15 Hours",,""
+"DT13 2025 Peterbilt 567 Steel Bed Dump Truck
+2025 Peterbilt 567
+",DT13,"","310 Miles
+0 Hours",Work Order: 3779,""
+"DT5 Mack Tri-Axle CT713 Dump Truck
+2006 Mack Tri-Axle - CT713
+",DT5,"","321,984 Miles
+18,000 Hours",,""
+"DT8 Kenworth T880 Dump Truck
+2018 Kenworth T880 Dump Truck
+",DT8,florida,"214,465 Miles
+0 Hours",,""
+"DT9 Freightliner M2106 Dump Truck
+Freightliner M2106
+",DT9,florida,"141,912.7 Miles
+0 Hours",,""
+"E02 Komatsu PC-200
+1996 Komatsu PC-200
+",E02,"","11,804 Hours",,""
+"E05 Komatsu PC150-6K Excavator
+Komatsu PC150-6K
+",E05,florida,"9,932 Hours",Work Order: 3580,""
+"E06 Caterpillar 315CL
+2005 Caterpillar 315CL
+",E06,"","12,416 Hours",Work Order: 3555,""
+"E08 IHI 35 Mini Excavator
+2004 IHI 35 NX2 MINI
+",E08,"",390 Hours,Work Order: 3735,""
+"E09 Komatsu PC400LC-8 Excavator
+Komatsu PC400LC-8
+",E09,"","9,478 Hours",,""
+"E11 Komatsu PC27MR-3 Excavator
+2007 Komatsu PC27MR-3
+",E11,"","4,905 Hours",,""
+"E12 IHI 35VX Mini Excavator
+2008 IHI 35VX Mini
+",E12,"","1,008 Hours",7 due,""
+"E14 Kobelco SK220LC Excavator
+1997 Kobelco SK220LC
+",E14,"","2,029 Hours",Work Order: 3296,""
+"E15 Gradall 660 Excavator
+1985 Gradall 660
+",E15,"","",,""
+"E16 Komatsu PC138USLC-8 Excavator
+2011 Komatsu PC-138 USLC-8
+",E16,"","8,931 Hours",,""
+"E17 Komatsu PC308USLC-3 Excavator
+2005 Komatsu PC-308USLC-3
+",E17,"","12,884 Hours",,""
+"E18 Komatsu 170LC-10 Excavator
+2015 Komatsu 170LC-10
+",E18,"","6,105 Hours",Work Order: 3550,""
+"E19 Komatsu PC228 USLC-10 Excavator
+2016 Komatsu PC-228 USLC-10
+",E19,"","5,742 Hours",1 due,""
+"E20 Caterpillar 316E Excavator
+2015 Caterpillar 316E Excavator
+",E20,florida,"3,995.7 Hours",,""
+"E21 Komatsu PC138 USLC-11 Excavator
+2017 Komatsu PC-138 USLC-11
+",E21,"","5,782 Hours",1 due,""
+"E22 Caterpillar 304E2CR Excavator
+2016 Caterpillar 304E2CR
+",E22,florida,335.2 Hours,,""
+"E23 Caterpillar 305.5E Excavator
+2017 CAT 305.5E
+",E23,florida,"3,333 Hours",,""
+"E24 Komatsu PC228 USLC-10 Excavator
+2017 Komatsu PC-228 USLC-10
+",E24,"","5,491.8 Hours",5 due,""
+"E25 Caterpillar 335F Excavator
+2018 Caterpillar 335F
+",E25,"","5,402 Hours",Work Order: 3556,""
+"E26 Bobcat 329 Mini Excavator
+2006 Bobcat 329
+",E26,florida,"3,739.7 Hours",,""
+"E27 John Deere 245G Rail Excavator
+2015 John Deere 245G high rail
+",E27,"","4,915 Hours",1 due,""
+"E28 2006 Komatsu Excavator
+2006 Komatsu PC308USLC-3E0
+",E28,"",868 Hours,Work Order: 2854,""
+"E29 CAT 305.5E Mini Excavator
+CAT 305.5E
+",E29,florida,"3,946.3 Hours",Work Order: 3642,""
+"E30 Ihi 80
+IHI 80VX3
+",E30,"","3,669 Hours",,""
+"E31 CAT 315FL Hydraulic Excavator
+Caterpillar 315FL
+",E31,florida,"3,354 Hours",13 due,""
+"E32 2021 Komatsu PC138USLC-11 Hyd. Excavator
+2021 Komatsu PC138USLC-11
+",E32,"","2,940 Hours",,""
+"E33 2021 Komatsu Excavator
+2021 Komatsu Pc238uslc-11
+",E33,"","2,847 Hours",1 due,""
+"E34 2019 Kato 35V4-4p Mini Excavator
+2019 Kato 35V4
+",E34,"","1,268 Hours",,""
+"E35 2020 Komatsu PC138USLC-11 Excavator
+2022 Komatsu PC138USLC-11
+",E35,"","1,928 Hours",1 due soon,""
+"E36 2016 Caterpillar 335FLCR Excavator
+2016 Caterpillar 335FLCR
+",E36,"","5,135 Hours",,""
+"E37 2022 John Deere 245G LC FT4 Excavator
+2022 John Deere 245G
+",E37,"","1,862 Hours",,""
+"E38 2015 Caterpillar 335FLCR Excavator
+2015 Caterpillar 335FLCR
+",E38,"","5,272 Hours",,""
+"E39 2021 Komatsu Hydraulic Excavator
+2021 Komatsu PC390LC-11
+",E39,florida,"3,826 Hours",,""
+"E40 2023 Caterpillar Hydraulic Excavator 304-07
+2023 Caterpillar
+",E40,florida,510.3 Hours,,""
+"E41
+2024 Komatsu PC490
+",E41,"",0 Hours,,""
+"FT1 FG 30 Loader
+FG FG 30
+",FT1,florida,"3,978 Hours",,""
+"FT2 FG25C-GML Loader
+FG FG 25C-GML
+",FT2,"","1,575 Hours",,""
+"G04 Mitsubishi MG2901 Generator
+Mitsubishi MGA2901
+",G04,"",0 Hours,,""
+"G07 Wacker G56A Generator
+Wacker G56A
+",G07,"",0 Hours,,""
+"G10 Multiquip Generator
+2009 Multiquip 6A6H
+",G10,"","",3 due,""
+"G14 Multiquip GA2.5H Generator
+2009 Multiquip GA2.5H
+",G14,"","",1 due,""
+"G15 Multiquip GA5HA Generator
+2010 Multiquip GA5HA
+",G15,"","",3 due,""
+"G16 Multiquip GA3.6HA Generator
+2010 Multiquip GA3.6HA
+",G16,"","",,""
+"G17 Yamaha EF2600J Generator
+Yamaha EF2600j
+",G17,"","",,""
+"G18 Multiquip GA3.6HA Generator
+Multiquip GA3.6HA
+",G18,"","",3 due,""
+"G19 Mitsubishi MGE6700Z Generator
+Mitsubishi MGE6700Z
+",G19,"","",3 due,""
+"G20 Ingersoll Rand G75E/2005 Generator
+Ingersoll Rand G7HE/2005
+",G20,"","2,142 Hours",,""
+"G24 Generator
+Champion 40026
+",G24,"",0 Hours,,""
+"G26 Multiquip 6A6HA Generator
+2010 Multiquip 6A6HA
+",G26,"","",,""
+"G27 Multiquip GA6HR Generator
+2016 Multiquip GA6HR
+",G27,"","1,240 Hours",,""
+"G28 Wacker GP6600A Generator
+2016 Wacker GP6600A
+",G28,"",0 Hours,,""
+"G29 Wacker GP6600A Generator
+2016 Wacker GP6600A
+",G29,"",0 Hours,,""
+"G30 Multiquip GA6HR Generator
+2016 Multiquip GA6HR
+",G30,"","1,705 Hours",,""
+"G31 Mutliquip GA6HR Generator
+2016 Multiquip GA6HR
+",G31,"","1,839 Hours",,""
+"G32 Multiquip 6A6HR Generator
+2018 Multiquip 6A-6HR
+",G32,"","1,425 Hours",3 due,""
+"G33 Multiquip 6A6HR Generator
+2018 Multiquip 6A-6HR
+",G33,"",924 Hours,3 due,""
+"G35 Multiquip 6A6HR Generator
+2017 Multiquip GA6HR
+",G35,"",680 Hours,,""
+"G36 Kubota Generator
+Kubota GL11000
+",G36,"","3,524 Hours",,""
+"G37 Generator
+2020 Multiquip GA-6HR
+",G37,"",732 Hours,,""
+"G38 generator
+2020 Multiquip GA-6HR
+",G38,"",473 Hours,,""
+"G39
+2020 Multiquip GA-6HR
+",G39,"",555 Hours,,""
+"G40
+2020 Multiquip 6A-6HR
+",G40,"",185.6 Hours,3 due,""
+"G41
+2021 Multiquip GA-6HR
+",G41,"",383 Hours,,""
+"G42
+2021 Multiquip 6A6HA
+",G42,"",888 Hours,,""
+"G43
+2021 Multiquip 6A-6HR
+",G43,"",.1 Hours,,""
+"G44
+2022 Generac G0076722
+",G44,"",183 Hours,,""
+"G45
+2022 Wacker GP6600A
+",G45,"","",,""
+"G46
+2022 Wacker GP6600A
+",G46,"","",2 due,""
+"G47
+Multiquip 6A-6HR
+",G47,"",868 Hours,,""
+"G48
+2024 Multiquip GA-6HR
+",G48,"",0 Hours,,""
+"GH1
+2014 Wacker Neuson E3000
+",GH1,"","",,""
+"H1 Hydra Tech Hydraulic Pump
+2003 Hydra Tech Hydraulic Pump
+",H1,"","11,776 Hours",Work Order: 3706,""
+"H10 6in Rotoflo Pump 2021 RWP006
+MWI Rotoflo
+",H10,"","",,""
+"H11 6in Pump Centrif HC551/32
+2023 Hudig HC551/32
+",H11,florida,"2,000 Hours",,""
+"H12 BA150E D285 MP100 6"" PUMP on Trailer
+BBA
+",H12,"","1,050 Hours",,""
+"H2 Hydra Tech Hydraulic Pump
+1998 Hydra Tech Hydraulic Pump
+",H2,"","10,420 Hours",,""
+"H3 Hydra Tech Hydraulic Pump
+2004 Hydra Tech Hydraulic Pump
+",H3,"","4,562 Hours",,""
+"H4 Thompson 8"" Wellpoint Pump 8JSVW-DJDST-45D
+Thompson 8JSVW-DJDST-45D
+",H4,florida,"",,""
+"H5 Gorman Rupp 4"" Pump
+Gorman Rupp 4"" Pump
+",H5,florida,"",Work Order: 3784,""
+"H6 Thompson Jet Pump 4"" 4JCA-DJDST-45T
+Thompson Jet Pump
+",H6,florida,"",,""
+"H7 Thompson 6in  Piston Well Pump
+2016 Thompson 6in Piston Wellpump
+",H7,florida,"",,""
+"H8 2013 Pump BBA 6"" PT90
+2013 BBA PT90
+",H8,"","",,""
+"H9 8in 2013 Thompson Pump
+2013 Thompson 8RW-DJDS-45D-MC
+",H9,"","",,""
+"HM1 Indeco HP2000ABF Excavator Attachement
+2013 Indeco HP-2000 ABF
+",HM1,"","",,""
+"HM2 Kent KF4 Excavator Attachment
+Kent KF4
+",HM2,"","",,""
+"HM3 Caterpillar H140D Hammer
+2015 Caterpillar H140D Hammer (4000 lbs.)
+",HM3,"","",,""
+"HM4 Atlas copcoMB1650 Contilube Hammer
+2018 EPIROC MB1650
+",HM4,for hyrail excavator,"",,""
+"HM5 Movax SP50G Hammer
+MOVAX SP50G
+",HM5,"",219 Hours,Work Order: 3687,""
+"HM6 Vib Plate Tamper
+Indeco IHC 150
+",HM6,"","",,""
+"HM7 HPSI 150 Vibratory Hammer
+HPSI 150 HAMMER
+",HM7,florida,"",,""
+"HM8 2022 AQ1 Hydraulic Cutter
+2022 Antraquip AQ-1
+",HM8,"","",,""
+"HM9 2023 AQ3 Hydraulic Cutter
+2023 Antraquip AQ-3
+",HM9,"","",,""
+"HS1 Hay Shredder
+Hay Shredder
+",HS1,"","",4 due soon,""
+"HS2 2017 Finn Hay Shredder B70T-T4F
+2017 Finn B70T-43
+",HS2,"",195 Hours,Work Order: 3461,""
+"L04 JLG Sky Trak 6042 Loader
+2007 JLG Sky Trak 6042
+",L04,florida,"1,150 Hours",,""
+"L05 Caterpillar 924K Loder
+2015 Caterpillar 924K
+",L05,"","4,183 Hours",Work Order: 3609,""
+"L06 John Deere 204KXT Loader
+2015 John Deere 204KXT Loader
+",L06,"","2,248.6 Hours",,""
+"L07 TEREX SS636 Loader
+TEREX SS636
+",L07,"","2,838 Hours",,""
+"L08 2017 John Deere 544K-II
+2017 John Deere 544K-II
+",L08,"","2,744 Hours",,""
+"L09 Sky Trak 10054
+2010 JLG 10054
+",L09,"","7,517 Hours",,""
+"L10 L10 Komatsu WA270-8 Loader
+Komatsu WA270-8
+",L10,florida,"2,938.6 Hours",,""
+"L11 2016 JD 544K Wheel Loader
+2016 John Deere 544K
+",L11,"","6,032 Hours",,""
+"L12 Caterpillar 938M Wheel Loader
+2019 Caterpillar
+",L12,florida,"5,037.3 Hours",,""
+"L13 2023 Komatsu WA 320-8 Wheel Loader
+2023 Komatsu WA320-8
+",L13,"",925.9 Hours,,""
+"LP2 Wacker Light Plant
+Wacker LTC4
+",LP2,"","9,315 Hours",,""
+"LP3 Wacker LT4 Light Plant
+2000 Wacker LT 4
+",LP3,"","10,304 Hours",,""
+"LP4 Wacker LT4 Light Plant
+1999 Wacker LT 4
+",LP4,"","7,635 Hours",,""
+"LP5 Wacker Light Plant
+Wacker LTN8K
+",LP5,"","1,876 Hours",,""
+"LP6 Terex AL4000 Light Plant
+TEREX AL4000
+",LP6,"",0 Hours,,""
+"M1 JLG 3394 Scissor Lift
+2007 JLG 3394 Scissor Lift
+",M1,"","2,147 Hours",,""
+"M2 JLG 450A S11 Manlift
+2008 JLG 450A S11
+",M2,"","5,253 Hours",1 due,""
+"M3 JLG 600S Manlift
+2007 JLG 600S
+",M3,"","7,519 Hours",,""
+"MG1 2019 John Deere 670G Motor Road Grader
+2019 John Deere 670G
+",MG1,florida,"3,129.5 Hours",,""
+"OHR-1 OHR-1 UFC Overhang Rig
+UFC Overhang Rig
+",OHR-1,"","",,""
+"P100 2023 Dodge RAM 3500 LARAMIE
+2023 Dodge Ram 3500
+",P100,"","36,504 Miles",,""
+"P101 2024 Ram 2500 HD Crew
+2024 RAM 2500 HD Crew cab
+",P101,"","21,619 Miles",,""
+"P102 2023 Ram 2500
+2023 RAM 2500 HD Crew cab
+",P102,"","7,949 Miles",3 due,""
+"P103 2024 Lexus RX 350
+2024 Lexus RX 350
+",P103,"","",,""
+"P104 2023 Ram 2500
+2023 RAM 2500
+",P104,"","10,179 Miles",,OK 2024-10-07
+"P105 2022 Toyota RAV 4
+2022 Toyota Rav4
+",P105,"","",,""
+"P106 2024 Chevy 3500 HD
+2024 Chevrolet 3500
+",P106,"","12,167 Miles",,""
+"P30 GMC 2011 2500 Pickup Truck
+2011 GMC 2500
+",P30,"","270,900 Miles",,OK 2024-08-02
+"P42 2015 GMC Sierra 2500 Pickup Truck
+2015 GMC Sierra 2500 Crew Cab
+",P42,"","245,366 Miles",1 due,OK 2023-02-06
+"P44 2015 Dodge Ram 2500 Pickup Truck
+2015 Dodge Ram 2500 SLT
+",P44,"","280,100 Miles",,OK 2023-02-28
+"P45 2015 Dodge Ram 4500 Pickup Truck
+2015 Dodge RAM 4500
+",P45,"","227,893 Miles",,OK 2022-08-24
+"P48 2015 Chevrolet 2500 Pickup Truck
+2015 Chevrolet 2500
+",P48,"","214,712 Miles",,OK 2023-05-31
+"P50 Dodge 5500 Pickup Truck
+2015 Dodge 5500
+",P50,florida,"187,560 Miles",,""
+"P51 2012 Chevrolet 2500HD Pickup Truck
+2012 Chevrolet 2500 HD
+",P51,"","311,090 Miles",,OK 2024-06-03
+"P53 Dodge Ram 4500 Pickup Truck
+2016 Dodge RAM 4500
+",P53,florida,"209,806 Miles",,""
+"P54 2016 Chevrolet Silverado 2500 Pickup Truck
+2016 Chevrolet Silverado 2500
+",P54,"","197,879 Miles",,OK 2022-08-04
+"P55 Dodge Ram 2500 Pickup Truck
+2016 RAM 2500
+",P55,"","325,117 Miles",Work Order: 3838,OK 2023-08-11
+"P57 Dodge Ram 2500 Pickup Truck
+2017 Dodge Ram 2500
+",P57,"","198,273 Miles",,OK 2019-03-06
+"P58 2016 Chevrolet Silverado 2500 HD Pickup Truck
+2016 Chevrolet Silverado 2500 HD
+",P58,"","254,069 Miles",2 due,OK 2022-01-26
+"P59 Chevrolet Silverado 2500 HD Pickup Truck
+2016 Chevrolet Silverado 2500 HD
+",P59,"","250,008 Miles",1 due soon,OK 2019-10-30
+"P63 2018 Chevrolet 2500HD Pickup Truck
+2018 Chevrolet 2500 HD Crew cab
+",P63,"","164,975 Miles",Work Order: 3827,OK 2023-03-31
+"P64 2019 Jeep Cherokee
+2019 Jeep Cherokee
+",P64,"","133,228 Miles",2 due,OK 2023-04-17
+"P67 2018 Dodge Ram 2500
+2018 Dodge Ram 2500
+",P67,"","135,486 Miles",,OK 2024-02-13
+"P68 2016 Dodge Ram 1500
+2016 Dodge Ram 1500
+",P68,"","230,438 Miles",,OK 2024-04-05
+"P71 2019 RAM 2500
+2019 Dodge Ram 2500
+",P71,"","149,937 Miles",Work Order: 3819,OK 2024-11-05
+"P72 2020 Chevy 2500
+2020 Chevrolet 2500 HD Crew cab
+",P72,"","154,671 Miles",,OK 2023-12-18
+"P73 2019 RAM 2500
+2019 Dodge 2500
+",P73,"","179,576 Miles",Work Order: 3826,""
+"P74 2020 Chevy 3500 (Lone Wolf)
+2020 Chevrolet 3500
+",P74,"","72,724 Miles",,OK 2024-02-14
+"P76 2020 Dodge RAM 2500
+2020 Dodge Ram 2500
+",P76,"","147,441 Miles",,OK 2024-01-09
+"P77 2020 RAM 3500 Crew Cab
+2020 DODGE Ram 3500
+",P77,"","223,826 Miles",,OK 2024-10-16
+"P78 2015 Dodge RAM 2500
+2015 DODGE Ram 2500 SLT
+",P78,tony stockdale,"227,499 Miles",1 due soon,OK 2024-07-03
+"P79 2015 Ford F550
+2015 Ford F550
+",P79,"","189,127 Miles",,""
+"P80 2020 RAM 2500 Crew Cab Long Bed
+2020 DODGE Ram 2500
+",P80,"","82,207 Miles",,OK 2024-06-19
+"P81 2020 RAM 1500 Eco Diesel
+2020 DODGE Ram 1500
+",P81,"","182,179 Miles",,""
+"P82 2020 Dodge RAM 2500
+2020 Dodge Ram 2500
+",P82,"","98,282 Miles",,OK 2023-10-26
+"P83 2021 Chevy Silverado 2500
+2021 Chevrolet Silverado 2500
+",P83,"","85,164 Miles",1 due,OK 2024-02-06
+"P84 2018 Chevy 1500
+2018 Chevrolet 1500
+",P84,"","127,607 Miles",,OK 2023-10-12
+"P85 2018 Dodge RAM 2500
+2018 Dodge Ram 2500
+",P85,"","127,264 Miles",1 due soon,OK 2024-01-30
+"P86 2016 Dodge RAM 3500
+2016 DODGE Ram 3500
+",P86,"","195,824 Miles",,OK 2024-08-23
+"P87 2021 2500
+2021 DODGE Ram 2500
+",P87,"","69,718 Miles",,OK 2024-04-03
+"P88 2022 Ram 2500
+2022 DODGE 2500 HD
+",P88,"","80,419 Miles",,""
+"P89 2022 RAM 2500 4x4 crew cab 8 ft bed
+2022 Dodge RAM Ram 2500
+",P89,florida,"59,439 Miles",Work Order: 3790,""
+"P90 2022 RAM 2500 4x4 crew cab 8 ft bed
+2022 Dodge RAM Ram 2500
+",P90,"","52,415 Miles",,OK 2024-01-02
+"P91 2022 RAM 2500 4x4 crew cab 8 ft bed
+2022 Dodge RAM Ram 2500
+",P91,"","60,200 Miles",3 due,OK 2024-01-03
+"P92 2022 RAM 2500 4x4 crew cab 8 ft bed
+2022 Dodge RAM Ram 2500
+",P92,"","86,916 Miles",,OK 2024-02-15
+"P93 2022 RAM 2500 4x4 crew cab 8 ft bed
+2022 Dodge RAM Ram 2500
+",P93,"","59,349 Miles",,OK 2023-12-18
+"P94 2022 RAM 2500 4x4 crew cab 8 ft bed
+2022 Dodge RAM Ram 2500
+",P94,"","74,145 Miles",,OK 2024-03-04
+"P95 2023 Ram 2500
+2023 RAM 2500 HD Crew cab
+",P95,"","30,060 Miles",2 due,OK 2024-03-20
+"P96 2022 RAM2500
+2022 Dodge RAM 2500
+",P96,florida,"32,112 Miles",,""
+"P97 2024 Toyota Grand Highlander
+2024 Toyota Grand Highlander
+",P97,"","24,826 Miles",,OK 2024-07-18
+"P98 Ram 2500
+2023 RAM 2500 HD Crew cab
+",P98,"","21,329.4 Miles",1 due,""
+"P99 2023 Ram 2500 Crew
+2023 DODGE Ram 2500
+",P99,"","15,352 Miles",,""
+"PB1 Bobcat Power Broom 72
+Bobcat Power Broom 72
+",PB1,"","",,""
+"PB10 Rock Hound
+Bobcat LR 5B
+",PB10,"","",,""
+"PB11 Skid Steer QA 72"" Brush Hog
+
+",PB11,"","",,""
+"PB2 Power Broom
+Power Broom Power Broom
+",PB2,"","",,""
+"PB3 Power Broom
+Power Broom Power Broom
+",PB3,"","",Work Order: 3664,""
+"PB4 Power Broom
+Power Broom Power Broom
+",PB4,"","",,""
+"PB5 Power Broom / Skid Steer
+John Deere BP84
+",PB5,"","",,""
+"PB6 Highway Broom 3 WHL w/o Cab
+Laymor SM300
+",PB6,"","",,""
+"PB7 Terramite Commander 8 Broom
+Terramite Commander 8
+",PB7,"","",,""
+"PB8 2019 Fecon Mulcher BH74SS
+2019 Fecon BH74SS
+",PB8,"","",,""
+"PB9 ride on broom
+2018 Laymor SM300
+",PB9,"",127 Hours,,""
+"PD2 Power buggy
+Miller Scoot-Crete MB-16
+",PD2,"","",,""
+"PD3 Power Buggy
+Miller Scoot-Crete
+",PD3,"","",,""
+"PV3 Bidwell 3600 Paver
+2008 BidWell 3600
+",PV3,"",184 Hours,,""
+"PV4 Lee-Boy 8500 Asphalt Paver
+2002 Lee-Boy 8500 Paver
+",PV4,florida,"",,""
+"PV5 Lee-Boy Asphalt Paver
+2017 Lee-Boy 250 Gallon Tack Tank
+",PV5,florida,"",,""
+"PV6 Caterpillar PC306B Paver
+2017 Caterpillar PC306B
+",PV6,florida,"",,""
+"PV7 Lee-Boy 8520B Paver
+Lee-Boy
+",PV7,"","1,900 Hours",,""
+"PW1 Mi-T-M JCW-3504-0MHB Pressure Washer
+Mi-T-M JCW-3504-OMHB
+",PW1,"","",Work Order: 3775,""
+"PW2 Mi-T-M JCW-3504-0MHB Pressure Washer
+Mi-T-M JCW-3504-OMHB
+",PW2,"","",,""
+"PW3 Husqvarna 020523 Pressure Washer
+2014 Husqvarna 020524
+",PW3,"","",,""
+"PW4 Mi-T-M JCW-3504-2MHB Pressure Washer
+2016 Mi-T-M JCW-3504-2MHB
+",PW4,"","",,""
+"PW5
+2024 Simson CM61227
+",PW5,"","",,""
+"R1 Bomag Walk-Behind Roller
+Bomag Walk-Behind Roller
+",R1,"","",3 due,""
+"R10 Hamm 3410C 84"" Drum Roller
+2012 Hamm 3410
+",R10,"","5,532.5 Hours",9 due,""
+"R11 2023 Bomag 154 AD-5 Smooth Drum Roller
+2023 Bomag 154 AD-5
+",R11,"",0 Hours,,""
+"R2 Bomag BW213 Roller
+Bomag BW 213 DH3
+",R2,"","4,058 Hours","Work Order: 3614, 3638",""
+"R3 Bomag BW65S-2 Roller
+Bomag BW 65 S-2
+",R3,"","",,""
+"R4 Bomag BW75 S2 Roller
+2006 Bomag BW75 S2 Roller
+",R4,"","",3 due,""
+"R6 Wacker RD12A Roller
+2010 Wacker RD12A
+",R6,florida,"",,""
+"R7 2014 Hamm HD12VV Roller
+2014 Hamm HD12VV
+",R7,"","9,031 Hours",,""
+"R8 Hamm H 7i
+Hamm H 7i
+",R8,"","",,""
+"R9 2014 Dynapac CA2500D 84"" Vib Roller
+2014 Dynapac CA2500D
+",R9,"","3,002 Hours",,""
+"RE2 Rail Cart
+1990 6'x16' Rail Cart
+",RE2,"","",,""
+"RE3 Superior Rail Cart
+2014 Superior Cart Cart 15'x7' 40k Lb
+",RE3,"","",1 due,""
+"RE4 Ford F-350 w/rail gear
+2013 Ford F-350 w/rail gear
+",RE4,"","90,738 Miles",,OK 2024-05-28
+"RE5 Ford F750 Scissor Truck
+2015 Ford F750 Scissor Truck
+",RE5,"","18,547 Miles
+3,523 Hours",Work Order: 3718,""
+"RE6 7'  11' Rail Cart
+7' x 11' Rail Cart
+",RE6,"","",,""
+"RS1 Bunyan SHD 40 Roller
+2008 Bunyan SHD40
+",RS1,"","",,""
+"RT1 Moxy MT31 Dump Truck
+2006 Moxy MT31
+",RT1,"","9,835 Hours",Work Order: 1620,""
+"RT3 IHI IC 75-2 Excavator ""Morooka""
+IHI IC 75-2
+",RT3,"","2,502.8 Hours",Work Order: 3562,""
+"RT4 2014 John Deere 370E Articulated Dump Truck
+2014 John Deere 370E
+",RT4,"","5,978 Hours",1 due,""
+"RT5 2017 Terramac model-RT9
+2017 Terramac RT9
+",RT5,"","2,075.1 Hours",Work Order: 3463,""
+"RT6 2017 Morooka MST-1500VD Crawler Carrier
+2017 Morooka MST-1500VD
+",RT6,"","1,121 Hours",Work Order: 3634,""
+"S01 New Holland L 785 Skid Steer
+1992 New Holland L 785
+",S01,"","5,503 Hours",1 due soon,""
+"S02 New Holland 885 Skid Steer
+New Holland 885
+",S02,"","1,692 Hours",,""
+"S03 New Holland LS190 skid Steer
+New Holland LS190
+",S03,"","4,481 Hours",,""
+"S04 New Holland LS190 skid Steer
+New Holland LS190
+",S04,"","3,944 Hours",,""
+"S05 New Holland LS190B Skid Steer
+New Holland LS190B
+",S05,"","3,954 Hours",4 due,""
+"S06 Takeuchi Skid Steer
+Takeuchi TL-120
+",S06,"","3,439 Hours",,""
+"S07 New Holland LS190 Skid Steer
+New Holland LS190
+",S07,"","3,709 Hours",,""
+"S10 Caterpillar 277C Skid Steer
+2005 Caterpillar 277C
+",S10,"","5,608 Hours",,""
+"S11 Bobcat T870 Track Loader Skid Steer
+2017 Bobcat T870 Track Loader
+",S11,florida,"3,869.9 Hours",,""
+"S12 Bobcat T595 Skid Steer
+2018 Bobcat T595
+",S12,florida,"2,013.4 Hours",1 due,""
+"S13 2020 Takeuchi Skid Loader
+2020 Takeuchi TL12V2CRH
+",S13,"","1,552 Hours",1 due,""
+"S14 2019 John Deere Compact Loader
+2019 John Deere 331 G
+",S14,"","2,406 Hours",Work Order: 3746,""
+"S15 2023 Caterpillar Compact Track Loader 299D3XE
+2023 Caterpillar 299D3XE
+",S15,florida,704.8 Hours,,""
+"S16 JD 331G Compact Track Loader
+John Deere 331 G
+",S16,"",399 Hours,2 due,""
+"SA1 Spider Horizontal Lifeline
+2014 Spider Horizontal Lifeline
+",SA1,"","",,""
+"SB1 Vermac Sign Board
+2006 Vermac Signalisation Ver-Mac Inc Trailer
+",SB1,"","",,""
+"SB2 Vermac Sign Board
+2006 Vermac Signalisation Ver-Mac Inc Trailer
+",SB2,"","",,""
+"SB3 Vermac Sign Board
+2006 Vermac Signalisation Ver-Mac Inc Trailer
+",SB3,"","",1 due,""
+"SC1 Excavator Attachment
+
+",SC1,"","",,""
+"T08 Tow Master Trailer
+2004 Tow Master T-40
+",T08,"","",,""
+"T10 Office 10 x 50 Office Trailer
+Office 10 x 50 Office Trailer
+",T10,"","",,""
+"T15 Car-Mate Trailer 16 Foot  7000#
+2008 Car-Mate Trailer
+",T15,"","",,OK 2024-02-19
+"T22 Carry-On Trailer
+2006 Carry-On Trailer
+",T22,"","",,""
+"T25 Trailer Box Trl / VS2RX Refe
+1996 Trailer Box Trl / VS2RX Refer
+",T25,"","",,""
+"T27 Carry-On Trailer
+2010 Carry-On
+",T27,"","",,OK 2024-07-31
+"T28 Anderson Trailer
+2004 Anderson Trailer
+",T28,"","",,""
+"T30 2024 Big Tex Flatbed Gooseneck Trailer
+2024 Big Tex Big Tex
+",T30,"","",,""
+"T32 Rogers Trailer
+2015 Rogers
+",T32,"","",,""
+"T33 Interstate 40DLA
+2015 Interstate 40DLA
+",T33,"","",,""
+"T34 Multiquip Water Trailer
+2015 Multiquip Water Trailer 500 gal.
+",T34,florida,"",,""
+"T35 Eager Beaver Trailer
+2006 Eager Beaver Trailer
+",T35,florida,"",,""
+"T36 DIMN 24' Tool Trailer
+2008 DIMN 24' Tool Trailer
+",T36,florida,"",,""
+"T37 Load Trail D83-14T7 Trailer
+2016 Load Trail D83-14T7
+",T37,florida,"",,""
+"T38 Bend Trailer
+2012 Bend
+",T38,florida,"",,""
+"T39 Dorsey DC-BTR Trailer
+2018 Dorsey DC-BTR Trailer
+",T39,"","",,""
+"T40 PJTM Trailer
+2005 PJTM Trailer
+",T40,florida,"",,""
+"T41 Car-Mate Trailer 24 Foot
+2018 Car-Mate Trailer
+",T41,"","",,OK 2024-10-31
+"T43 Talbert 55CC Lowboy Trailer
+2018 Talbert 55CC Lowboy
+",T43,"","",,""
+"T43.25 2021 Talbert 55 Ton Flip Axle
+2021 TALBERT TALBERT
+",T43.25,"","",,OK 2022-08-24
+"T44 Florida Trailer
+2018 Trailer Big Tex 14TL-22
+",T44,florida,"",,""
+"T46 ARNG 8.5 x 20NC Trailer
+2018 ARNG 8.5X20ENC
+",T46,florida,"",,""
+"T47 Car Hauler
+2017 Big Tex Trailer
+",T47,"","",Work Order: 3587,OK 2024-07-19
+"T48 2019 Big Tex 20 Ft Trailer
+2019 Big Tex Big Tex
+",T48,florida,"",,""
+"T49 Pace Tool Trailer (green)
+1999 Pace Trailer
+",T49,florida,"",,""
+"T50 Gooseneck Trailer
+2020 APPALACHIAN TRAILERS INC. Appalacian
+",T50,"","",,OK 2022-08-08
+"T51 2021 Carmate Trailer (001001)
+2021 Car-Mate CM820OCC-HD
+",T51,"","",,OK 2023-12-21
+"T52 2021 Carmate Trailer (001002)
+2021 Car-Mate CM820OCC-HD
+",T52,"","",,OK 2024-02-20
+"T53 2021 CAM Superline  Dump Trailer
+2021 CAM Superline Tilt-Deck Trl.
+",T53,"","",,OK 2024-01-10
+"T54 CAM Superline Dump Trailer
+2021 CAM Superline Tilt-Deck Trl.
+",T54,"","",1 due,OK 2024-01-04
+"T55 Rock Solid Cargo Trailer 8x20
+2021 Rock Solid
+",T55,florida,"",,""
+"T56 Rock Solid Cargo Trailer 8x20
+2021 Rock Solid Cargo
+",T56,florida,"",,""
+"T57 Deck Over
+2021 Quality Deckover
+",T57,"","",,OK 2023-04-20
+"T58 2021 Carmate Cargo Trailer
+2021 Cargo
+",T58,"","",,OK 2023-03-20
+"T59 2022 Dorsey Equipment Trailer
+2022 Dorsey LB 35-33CS
+",T59,"","",,""
+"T60 2022 Talbert 60CC/55SA-LD
+2022 Talbert 60CC/55SA-LD
+",T60,"","",,""
+"T61 2020 Cargo Trailer
+2020 Sure Trac 8.5X20ENC
+",T61,"","",,OK 2024-08-22
+"T62 Beaver Tail
+2022 Appalachian Appalachian Trailers Inc.
+",T62,"","",,OK 2024-04-09
+"T63 Deck Over
+2022 Appalachian FP-6K-22SD
+",T63,"","",,OK 2024-05-20
+"T64 2022 USA Cargo Enclosed 20ft Trailer
+2022 USA Cargo
+",T64,florida,"",,""
+"T65 2023 Dorsey FC48 Combo Flat Trailer 48'
+2023 DORSEY Dorsey
+",T65,"","",,""
+"T66 8x24
+2021 Cynergy Cynergy Cargo
+",T66,"","",,OK 2023-11-20
+"T67 2000 Trailmobile (HAY Trailer)
+2000 TRAILMOBILE Trailmobile Trailer
+",T67,"","",,""
+"T68 US Cargo
+2023 USA Cargo Trailer
+",T68,"","",,OK 2023-02-06
+"T69 2024 Lonestar Gooseneck Trailer
+2024 Lonestar Trailer
+",T69,"","",,""
+"T70 2024 Big Tex Flatbed Gooseneck Trailer
+2024 Big Tex
+",T70,"","",,""
+"T71 2024 AMP Dump Trailer 7 x 14
+2024 AMP
+",T71,"","",,""
+"T72 2024 Appalachian Trailer
+2024 APPALACHIAN TRAILERS INC.
+",T72,"","",,OK 2024-06-12
+"T73
+2024 H&H H & H Trailers
+",T73,"","",,""
+"T74 2020 Moritz Dump Trailer
+2020 MORITZ INTERNATIONAL Moritz International
+",T74,"","",,""
+"T-BOAT 1992 Hoosier Boat Trailer
+1992 Hoosier Spreuer & Son Inc.
+",T-BOAT,"","",,""
+"TR1 International Tractor
+2001 International Tractor
+",TR1,"","615,851 Miles
+0 Hours",1 due soon,""
+"TR3 Peterbilt 379 Tri-day Cab Tractor
+2007 Peterbilt Tractor 379 Tri day cab
+",TR3,"","394,308 Miles
+12,621 Hours","Work Order: 3648, 3649",""
+"TR5 Kenworth T800 DayCab Tractor
+2010 Kenworth T800 DayCab
+",TR5,"","817,778 Miles
+16,287 Hours",,""
+"TR6 Kenworth T800
+2016 Kenworth T800 Sleeper
+",TR6,"","299,194 Miles
+73,020 Hours",,""
+"TR8 Fully red Kenworth with bunk
+2015 Kenworth T800 Sleeper
+",TR8,"","572,820 Miles
+3,084 Hours",,""
+"TR9 Peterbilt 389 Heavy Haul
+2020 Peterbilt 389
+",TR9,"","234,346 Miles
+0 Hours",,""
+"UV11 Polaris Ranger 900XP PS
+2016 Polaris Ranger 900 XP PS
+",UV11,"","3,560 Miles
+1,132 Hours",,""
+"UV12 Dodge Ram 5500 Service Truck
+2017 Dodge 5500 Service Truck
+",UV12,"","103,828 Miles",Work Order: 3799,""
+"UV13 2019 POLARIS RANGER XP 900E
+2019 Polaris RANGER XP 900E
+",UV13,"",592 Hours,,""
+"UV14 2023 Polaris Ranger
+2023 Polaris XP1000
+",UV14,"","258 Hours
+761 Miles",2 due,""
+"UV15 2016 CanAm1000 Side by Side
+2016 CAN-AM Commander
+",UV15,"","708 Hours
+694 Miles",3 due,""
+"UV16
+2019 John Deere XUV835M
+",UV16,"","5,716 Miles
+410 Hours",,""
+"UV3 Stake Bed/Crash Truck
+2005 Truck Stake Bed/Crash Truck
+",UV3,"","69,610 Miles",Work Order: 3228,""
+"UV5 Polaris Ranger
+Polaris Ranger
+",UV5,"","",,""
+"UV6 Ford Water Truck
+1987 Ford Water Truck
+",UV6,"","",,""
+"UV9 Internation 4700
+1999 International 4700
+",UV9,"","9,578 Hours
+50,777 Miles",Work Order: 1471,""
+"W01 Lincoln Ranger 9 Welder
+Lincoln Ranger 9
+",W01,"","2,527 Hours",,""
+"W03 Lioncoln Ranger 10,000 Welder
+Lincoln Ranger 10,000
+",W03,"","2,374 Hours",,""
+"W04 Lincoln Ranger 250GXT Welder
+Lincoln Ranger 250GXT
+",W04,"","3,189 Hours",,""
+"W05 Lincoln Ranger 250GXT Welder
+Lincoln Ranger 250GXT
+",W05,"","1,864 Hours",,""
+"W06 Lincoln Ranger 9 Welder
+Lincoln Ranger 9
+",W06,"",501 Hours,,""
+"W07 Welder
+2019 Multiquip GAW-135H
+",W07,"",0 Hours,,""
+"W08
+Lincoln Vantage 300
+",W08,"","2,265 Hours",,""
+"W09 Suitcase Welder 1
+Miller X-Treme 12VS
+",W09,"","",,""
+"W10 Suitcase Welder 2
+Miller
+",W10,"","",,""
+"W11 Welder- Multiquip 400 amp Dual Opp Welder
+
+",W11,"","3,324 Hours",,""
+"W12 Suit Case Welder
+2023 Miller 12 CE
+",W12,"","",,""
+"W13
+Multiquip DLW-400ESA4
+",W13,"","2,194 Hours",,""
+"W14
+2024 Miller ArcREACH SuitCase 12
+",W14,"","",,""
+"W15
+2024 Miller ArcREACH SuitCase 12
+",W15,"","",,""
+"W16
+Miller ArcREACH SuitCase 12
+",W16,"","",,""

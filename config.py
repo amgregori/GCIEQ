@@ -15,18 +15,21 @@ class Config:
     WTF_CSRF_ENABLED = True
     
     SECRET_KEY = os.getenv('SECRET_KEY', default='8cda0a26e987b29d7da05fa0b0b2bb51')
-    SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, 'gceq.db')
+    # SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, 'gceq.db')
+    SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, 'eqdb.db')
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 class DevelopmentConfig(Config):
     FLASK_DEBUG = True
-    SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, 'gceq.db')  
+    # SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, 'gceq.db')  
+    SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, 'eqdb.db')
 
 class TestingConfig(Config):
     TESTING = True
     WTF_CSRF_ENABLED = False
     MAIL_SUPPRESS_SEND = True
-    SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, 'test.db')
+    # SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, 'test.db')
+    SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, 'eqdb.db')
 
 class ProductionConfig(Config):
     FLASK_ENV = 'production'

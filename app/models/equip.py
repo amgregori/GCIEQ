@@ -1,6 +1,46 @@
 from app.extensions import db
+from sqlalchemy import ForeignKey, DateTime
+
+class Equip(db.Model):
+    __tablename__ = 'equip'
+
+    eq_no =db.Column(db.String, primary_key=True, index=True)
+    eq_desc = db.Column(db.String)
+    eq_sn = db.Column(db.String)
+    eq_yr = db.Column(db.Integer)
+    eq_cat_no = db.Column(db.String, ForeignKey('eq_category.cat_id'))
+    eq_purch_price = db.Column(db.Numeric)
+    eq_purch_date = db.Column(db.DateTime)
+    rate_oper_syst = db.Column(db.Numeric)
+    rate_idle_syst = db.Column(db.Numeric)
+    rate_down_syst = db.Column(db.Numeric)
+    rate_oper_calc = db.Column(db.Numeric)
+    rate_idle_calc = db.Column(db.Numeric)
+    rate_down_calc = db.Column(db.Numeric)
 
 
+class EqCategory(db.Model):
+    __tablename__ = 'eq_category'
+
+    cat_id = db.Column(db.String, primary_key=True, index=True)
+    cat_desc = db.Column(db.String)
+
+
+class EqUsage(db.Model):
+    __tablename__ = 'eq_usage'
+
+    id = db.Column(db.Integer, primary_key=True, index=True)
+    eq_no = db.Column(db.String, ForeignKey('equip.eq_no'))
+    sort_order = db.Column(db.Integer)
+    date_booked = db.Column(db.DateTime)
+    job_no = db.Column(db.String)
+    hours = db.Column(db.Numeric)
+
+
+
+
+
+'''
 
 class EqData(db.Model):
     eqid = db.Column(db.String(50), primary_key=True, nullable=False)       # Equipment number from Maint Pro or Foundation
@@ -53,3 +93,4 @@ class MeterType(db.Model):
 
     def __repr__(self):
         return '<Meter Type: %r>' %self.meter_type
+'''

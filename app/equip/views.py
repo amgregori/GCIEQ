@@ -10,10 +10,10 @@ from openpyxl import load_workbook
 
 from app.extensions import db
 
-from app.models.equip import EqData
-from app.models.equip import RMRecords
+from app.models.equip import Equip
 from app.models.equip import EqCategory
-from app.models.equip import RMCategory
+from app.models.equip import EqUsage
+
 
 from .forms import FrmEqData
 
@@ -32,7 +32,7 @@ def equip_main():
 
     form = FrmEqData()
     title = "Master Equipment List"
-    eqlist = EqData.query.order_by(EqData.eqid)
+    eqlist = Equip.query.order_by(Equip.eq_no)
 
     return render_template('/equip/equipmain.html', title=title, eqlist=eqlist, form=form)
     
@@ -47,8 +47,8 @@ def eq_data():
 
     title = 'Equipment Details'
 
-    eqid_l = EqData.query.order_by(EqData.eqid)
-    eqid_list = [(eqid.eqid, eqid.make) for eqid in eqid_l]
+    eqid_l = Equip.query.order_by(Equip.eq_no)
+    eqid_list = [(eqid.eq_no, eqid.descr) for eqid in eqid_l]
 
     eq_cat = EqCategory.query.order_by(EqCategory.eqcat)
 
@@ -58,11 +58,12 @@ def eq_data():
 
 
     return render_template('/equip/eq_data.html', form=form, title=title)
-    
+
 @equip_bp.route('/equip/eq_edit/<eqid>', methods=['GET', 'POST'])
 def eq_edit(eqid):
     form = FrmEqData()
     title = "Equipment Data"
+    '''  
 
     eq_piece = EqData.query.get_or_404(eqid)
 
@@ -108,3 +109,5 @@ def eq_edit(eqid):
 
     return render_template('/equip/eq_data.html', form=form, eq_piece=eq_piece, eqid=eqid, eq_cat=eq_cat)
     #return render_template('/equip/eq_data.html', form=form, eq_piece=eq_piece)
+'''
+    return "Eq Edit Page"
