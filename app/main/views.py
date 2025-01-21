@@ -19,12 +19,6 @@ def index():
 def dbutil():
 
     if request.method == 'POST':
-        if 'dbfix' in request.form:
-            flash01()
-
-        if 'dbupdate' in request.form:
-            flash02()
-
         if 'eq_cat_update' in request.form:
             eq_cat_import()
 
@@ -56,7 +50,7 @@ def eq_cat_import():
     Workbook = load_workbook(category_file)
     Worksheet = Workbook.active
 
-    if Worksheet.cell(row=1,column=1).value == 'equipment_no':
+    if Worksheet.cell(row=1,column=1).value == 'eq_category_no':
                     
         for row in Worksheet.iter_rows():
             RowCells = []
@@ -93,8 +87,8 @@ def eq_list_import():
     Workbook = load_workbook(equipment_file)
     Worksheet = Workbook.active
 
-    if Worksheet.cell(row=1,column=1).value == 'eq_category_no':
-        flash('Correct File.')
+    if Worksheet.cell(row=1,column=1).value == 'equipment_no':
+        flash('Correct Eq List File.')
             
         for row in Worksheet.iter_rows():
             RowCells = []
@@ -107,20 +101,23 @@ def eq_list_import():
         Stopped here. Need to complete mapping for equipment list file.
         
         '''
-        for row in category_list:
-            cat = EqCategory.query.filter_by(cat_id = row[0]).first()
+        for row in equipment_list:
+            piece = Equip.query.filter_by(eq_id = row[0]).first()
     
-            if cat is None:
-                new_category = EqCategory(cat_id = row[0], cat_desc=row[1])
+            if piece is None:
+                new_category = Equip(eq_no = row[0], eq_desc=row[1],
+                                     eq_sn = row[4], eq_yr = row[3],
+                                     eq_cat_no = row[7], eq_purch_price = row[10],
+                                     ea_purch_date = [5], rate_oper_syst = row[8])
                 db.session.add(new_category)
                 db.session.commit()
                 added += 1
         
             else:
                 skipped += 1
-
-        #flash('Skipped: ' + str(skipped))
-        #flash('Added: '+ str(added))
+        flash(len(equipment_list))
+        flash('Skipped: ' + str(skipped))
+        flash('Added: '+ str(added))
     else:
         flash('You Chose the Wrong File')
         return render_template('main/dbutil.html')
