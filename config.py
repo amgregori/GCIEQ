@@ -1,9 +1,12 @@
 import os
 from dotenv import load_dotenv
+from sqlalchemy import create_engine
 load_dotenv()
 
 # Find absolute path to top level project directory
 basedir = os.path.abspath(os.path.dirname(__file__))
+
+engine = create_engine("sqlite:///" + os.path.join(basedir, 'eqdb.db'))
 
 class Config:
     """
@@ -16,13 +19,18 @@ class Config:
     
     SECRET_KEY = os.getenv('SECRET_KEY', default='8cda0a26e987b29d7da05fa0b0b2bb51')
     # SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, 'gceq.db')
-    SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, 'eqdb.db')
+    
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+    
+    engine = create_engine("sqlite:///" + os.path.join(basedir, 'eqdb.db'))
 
 class DevelopmentConfig(Config):
     FLASK_DEBUG = True
     # SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, 'gceq.db')  
     SQLALCHEMY_DATABASE_URI = "sqlite:///" + os.path.join(basedir, 'eqdb.db')
+    
+    
 
 class TestingConfig(Config):
     TESTING = True

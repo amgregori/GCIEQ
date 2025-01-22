@@ -1,3 +1,4 @@
+
 from . import main_bp
 from flask import render_template, redirect, url_for, request, flash
 from app.extensions import db
@@ -5,12 +6,18 @@ from app.models.equip import Equip
 from app.models.equip import EqCategory
 from app.models.equip import EqUsage
 
+from sqlalchemy import create_engine
+from config import engine
+
+
 import pandas as pd
+
 
 
 from openpyxl import load_workbook
 
 from datetime import datetime
+
 
 
 @main_bp.route('/')
@@ -34,23 +41,51 @@ def dbutil():
 
             category_file = request.files['EqCatFile']
 
-            Workbook = load_workbook(category_file)
-            Worksheet = Workbook.active
+            # Workbook = load_workbook(category_file)
+            # Worksheet = Workbook.active
             
             
 
-            #df = pd.read_excel(category_file)
+            df = pd.read_excel(category_file)
 
-            #col_1 = df.columns[0]
-            #col_2 = df.columns[1]
+            
 
-            col_1 = Worksheet.cell(row=1,column=1).value
-            col_2 = Worksheet.cell(row=1,column=2).value
+            col_1 = df.columns[0]
+            col_2 = df.columns[1]
+
+            #col_1 = Worksheet.cell(row=1,column=1).value
+            #col_2 = Worksheet.cell(row=1,column=2).value
 
             check_columns = (col_1 == 'eq_category_no' and col_2 == 'description')
 
             if check_columns:
                 check = "OK"
+
+                df.rename(columns={'eq_category_no': 'cat_id', 'description': 'cat_desc'}, inplace=True)
+
+                extg_data = pd.read_sql_table('eq_category', engine)
+                comb_data = pd.concat([extg_data, df], ignore_index=True)
+
+                
+
+                add = comb_data[~comb_data.duplicated(keep=False)]
+
+                
+                add.to_sql('eq_category', engine, if_exists='append', index=False)
+
+                LenExt = len(extg_data)
+                LenNew = len(df)
+                LenCom = len(comb_data)
+                LenAdd = len(add)
+
+                
+
+
+
+
+
+
+
             else:
                 check = "No Good"
 
@@ -65,7 +100,8 @@ def dbutil():
 
             
 
-            return render_template('main/dbutil.html',col_1=col_1, col_2=col_2, check=check)
+            return render_template('main/dbutil.html',col_1=col_1, col_2=col_2, check=check, LenExt=LenExt,
+                                    LenNew=LenNew, LenCom=LenCom, LenAdd=LenAdd)
 
 
         '''
