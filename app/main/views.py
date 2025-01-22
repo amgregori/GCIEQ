@@ -27,35 +27,19 @@ def index():
 @main_bp.route('/db', methods=['GET', 'POST'])
 def dbutil():
 
-    #df = pd.DataFrame()
-    #row_display = 'row'
-
-     
-
-    if request.method == 'POST':
-
-        
+    if request.method == 'POST':        
         if 'eq_cat_update' in request.form:
             
             # Check that the file is correct:
 
             category_file = request.files['EqCatFile']
-
-            # Workbook = load_workbook(category_file)
-            # Worksheet = Workbook.active
             
-            
-
             df = pd.read_excel(category_file)
-
             
-
             col_1 = df.columns[0]
             col_2 = df.columns[1]
 
-            #col_1 = Worksheet.cell(row=1,column=1).value
-            #col_2 = Worksheet.cell(row=1,column=2).value
-
+            
             check_columns = (col_1 == 'eq_category_no' and col_2 == 'description')
 
             if check_columns:
@@ -78,79 +62,45 @@ def dbutil():
                 LenCom = len(comb_data)
                 LenAdd = len(add)
 
-                
-
-
-
-
-
-
-
-            else:
-                check = "No Good"
-
-            #file_OK = (file[0] == 'eq_category_no')
-
-            #if file_OK:
-            #    check = "OK"
-            #else:
-            #    check = "No Good"
-
-            #flash(check)
-
-            
-
-            return render_template('main/dbutil.html',col_1=col_1, col_2=col_2, check=check, LenExt=LenExt,
+                return render_template('main/dbutil.html',col_1=col_1, col_2=col_2, check=check, LenExt=LenExt,
                                     LenNew=LenNew, LenCom=LenCom, LenAdd=LenAdd)
 
-
-        '''
-            category_list = []
-            category_file = request.files["EqCatFile"]
-            added = 0
-            skipped = 0
-   
-            Workbook = load_workbook(category_file)
-            Worksheet = Workbook.active
-    
-            if Worksheet.cell(row=1,column=1).value == 'eq_category_no':
-
-                for row in Worksheet.iter_rows():
-                    RowCells = []
-                    
-                    for cell in row:
-                        RowCells.append(cell.value)
-                    category_list.append(tuple(RowCells))
-    
-                del category_list[0]
-        
-                for row in category_list:
-                    cat = EqCategory.query.filter_by(cat_id = row[0]).first()
-    
-                    if cat is None:
-                        new_category = EqCategory(cat_id = row[0], cat_desc=row[1])
-                        db.session.add(new_category)
-                        db.session.commit()
-                        added += 1
-                    
-       
-                else:
-                    skipped += 1
-
-            
-                    
-
+              
             else:
-                file = "Incorrect"
-        '''
-            #return render_template('main/dbutil.html', file=file, skipped=skipped, added=added)
+                check = "No Good"              
 
+                return render_template('main/dbutil.html', check=check)
             
             
 
-        #if 'eq_list_update' in request.form:
-        #    eq_list_import()
- 
+                  
+        if 'eq_usage_import' in request.form:
+            
+            # Check that the file is correct:
+
+            usage_file = request.files['EqUsageFile']
+            
+            df = pd.read_excel(usage_file)
+            
+            col_00 = df.columns[0]
+            col_06 = df.columns[6]
+            col_08 = df.columns[8]
+            col_09 = df.columns[9]
+            col_17 = df.columns[17]
+
+            check_columns = (col_00 == 'sort_order_no' and col_06 == 'equipment_no'
+                             and col_08 == 'date_booked' and col_09 == 'job_no' 
+                             and col_17 == 'equipment_units')
+            
+            if check_columns:
+                flash('OK')
+            
+            else:
+                flash('Not OK')
+
+
+
+        
     
    
     return render_template('main/dbutil.html')
