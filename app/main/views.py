@@ -80,7 +80,7 @@ def dbutil():
 
             usage_file = request.files['EqUsageFile']
             
-            df = pd.read_excel(usage_file)
+            df = pd.read_excel(usage_file, nrows=2)
             
             col_00 = df.columns[0]
             col_06 = df.columns[6]
@@ -93,11 +93,21 @@ def dbutil():
                              and col_17 == 'equipment_units')
             
             if check_columns:
-                flash('OK')
+                flash('File is OK')
+
+                '''
+                df = pd.read_excel(usage_file)
+
+                df_extract = df.loc[:, 'sort_order_no', 'sort_order_no', 'date_booked', 'job_no', 'equipment_units']
+
+                columns_01 = len(df.columns)
+                columns_02 = len(df_extract.columns)
+        
+                
+                '''
             
             else:
                 flash('Not OK')
-
 
 
         
