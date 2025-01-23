@@ -32,8 +32,8 @@
 <br/>
 {{check}} <br/>
 
-<h3>LenExt: {{LenExt}}</h3><br/>
-<h3>LenNew: {{LenNew}}</h3><br/>
+<h3>LenExt: {{LenExtg}}</h3><br/>
+<h3>LenNew: {{LenFile}}</h3><br/>
 <h3>LenCom: {{LenCom}}</h3><br/>
 <h3>LenAdd: {{LenAdd}}</h3><br/>
 
@@ -49,14 +49,20 @@
   <input type="file" name="EqUsageFile" style="font-family: 'Times New Roman', Times, serif;"/><br/>
   <input name='eq_usage_import' type="submit" style="font-family: 'Times New Roman', Times, serif;"/><br/>
 <br/>
-<h3>Original Columns: {{columns_01}}</h3><br/>
-<h3>Extracted Columns: {{columns_02}}</h3><br/>
+<hr>
+  {% for row in df_display %}
+      {{row}}
+  {% endfor %}
+
+<hr>
+<h3>Extg Columns: {{columns_01}}</h3><br/>
+<h3>Import Columns: {{columns_02}}</h3><br/>
+<h3>LenExt: {{LenExt}}</h3><br/>
+<h3>LenNew: {{LenNew}}</h3><br/>
+<h3>LenComb: {{LenComb}}</h3><br/>
+<h3>LenAdd: {{LenAdd}}</h3><br/>
 <br/>
-Col 00: {{col_00}}<br/>
-Col 06: {{col_06}}<br/>
-Col 08: {{col_08}}<br/>
-Col 09: {{col_09}}<br/>
-Col 17: {{col_17}}<br/>
+
 </form>
 
 

@@ -35,6 +35,7 @@ class EqUsage(db.Model):
     date_booked = db.Column(db.DateTime)
     job_no = db.Column(db.String)
     hours = db.Column(db.Numeric)
+    cost_code_no = db.Column(db.String)
 
 
 

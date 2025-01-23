@@ -95,16 +95,40 @@ def dbutil():
             if check_columns:
                 flash('File is OK')
 
-                '''
+                
                 df = pd.read_excel(usage_file)
 
-                df_extract = df.loc[:, 'sort_order_no', 'sort_order_no', 'date_booked', 'job_no', 'equipment_units']
+                df_extract = df[[ 'equipment_no', 'sort_order_no','date_booked', 'job_no', 'equipment_units']].copy()
+              
 
-                columns_01 = len(df.columns)
-                columns_02 = len(df_extract.columns)
-        
+                df_extract.rename(columns={ 'equipment_no': 'eq_no', 'sort_order_no': 'sort_order', 
+                                           'equipment_units': 'hours'}, inplace=True)
                 
-                '''
+                extg_data = pd.read_sql_table('eq_usage', engine)
+
+                columns_01 = list(extg_data.columns)
+                columns_02 = list(df_extract.columns)
+
+
+
+                comb_data = pd.concat([extg_data, df_extract], ignore_index=True)
+
+                add = comb_data[~comb_data.duplicated(['eq_no', 'sort_order', 'date_booked', 'job_no', 'hours'], keep=False)]
+                
+                LenExtg = extg_data.shape[0]
+                LenComb = comb_data.shape[0]
+                LenFile = df_extract.shape[0]
+                LenAdd = add.shape[0]
+
+                #add.to_sql('eq_usage', engine, if_exists='append', index=False)
+
+
+                   
+                
+
+                return render_template('main/dbutil.html', columns_01=columns_01, 
+                                       LenFile=LenFile, columns_02=columns_02, 
+                                       LenExtg=LenExtg, LenAdd=LenAdd, LenComb=LenComb)
             
             else:
                 flash('Not OK')
