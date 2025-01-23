@@ -32,10 +32,9 @@
 <br/>
 {{check}} <br/>
 
-<h3>LenExt: {{LenExtg}}</h3><br/>
-<h3>LenNew: {{LenFile}}</h3><br/>
-<h3>LenCom: {{LenCom}}</h3><br/>
-<h3>LenAdd: {{LenAdd}}</h3><br/>
+
+
+
 
 
 
@@ -57,11 +56,14 @@
 <hr>
 <h3>Extg Columns: {{columns_01}}</h3><br/>
 <h3>Import Columns: {{columns_02}}</h3><br/>
-<h3>LenExt: {{LenExt}}</h3><br/>
+<h3>LenExt: {{LenExtg}}</h3><br/>
 <h3>LenNew: {{LenNew}}</h3><br/>
 <h3>LenComb: {{LenComb}}</h3><br/>
 <h3>LenAdd: {{LenAdd}}</h3><br/>
 <br/>
+{% for row in extg_data %}
+      {{ row.date_booked }}
+    {% endfor %}
 
 </form>
 
