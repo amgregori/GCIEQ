@@ -4,38 +4,41 @@ from sqlalchemy import ForeignKey, DateTime
 class Equip(db.Model):
     __tablename__ = 'equip'
 
-    eq_no =db.Column(db.String, primary_key=True, index=True)
-    eq_desc = db.Column(db.String)
-    eq_sn = db.Column(db.String)
-    eq_yr = db.Column(db.Integer)
-    eq_cat_no = db.Column(db.String, ForeignKey('eq_category.cat_id'))
-    eq_purch_price = db.Column(db.Numeric)
-    eq_purch_date = db.Column(db.DateTime)
-    rate_oper_syst = db.Column(db.Numeric)
+    equipment_no =db.Column(db.String, primary_key=True, index=True)
+    description = db.Column(db.String)
+    serial_number = db.Column(db.String)
+    model_year = db.Column(db.Integer)
+    eq_category_no = db.Column(db.String, ForeignKey('eq_category.cat_id'))
+    purchase_price = db.Column(db.Numeric)
+    purchase_date = db.Column(db.DateTime)
+    default_hourly_rate = db.Column(db.Numeric)
     rate_idle_syst = db.Column(db.Numeric)
     rate_down_syst = db.Column(db.Numeric)
     rate_oper_calc = db.Column(db.Numeric)
     rate_idle_calc = db.Column(db.Numeric)
     rate_down_calc = db.Column(db.Numeric)
+    date_modified = db.Column(db.DateTime)
 
 
 class EqCategory(db.Model):
     __tablename__ = 'eq_category'
 
-    cat_id = db.Column(db.String, primary_key=True, index=True)
-    cat_desc = db.Column(db.String)
+    eq_category_no = db.Column(db.String, primary_key=True, index=True)
+    description = db.Column(db.String)
+    date_modified = db.Column(db.DateTime)
 
 
 class EqUsage(db.Model):
     __tablename__ = 'eq_usage'
 
     id = db.Column(db.Integer, primary_key=True, index=True)
-    eq_no = db.Column(db.String, ForeignKey('equip.eq_no'))
-    sort_order = db.Column(db.Integer)
+    equipment_no = db.Column(db.String, ForeignKey('equip.eq_no'))
+    transaction_no = db.Column(db.Integer)
     date_booked = db.Column(db.DateTime)
     job_no = db.Column(db.String)
-    hours = db.Column(db.Numeric)
+    equipment_units = db.Column(db.Numeric)
     cost_code_no = db.Column(db.String)
+    date_modified = db.Column(db.DateTime)
 
 
 
