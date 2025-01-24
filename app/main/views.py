@@ -94,6 +94,7 @@ def dbutil():
             
             if check_columns:
                 flash('File is OK')
+                print('OK')
 
                 extg_data = EqUsage.query.order_by(EqUsage.date_booked)
                 
