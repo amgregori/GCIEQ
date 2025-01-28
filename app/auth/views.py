@@ -1,3 +1,4 @@
+
 from . import auth_bp
 from flask import render_template, redirect, url_for, flash
 from flask_login import UserMixin, login_user, login_required, logout_user, current_user
@@ -87,3 +88,5 @@ def dashboard():
 def logout():
     logout_user()
     return redirect(url_for('main.index'))
+
+

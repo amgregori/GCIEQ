@@ -5,18 +5,17 @@ from app.extensions import db
 from app.models.equip import Equip
 from app.models.equip import EqCategory
 from app.models.equip import EqUsage
+from openpyxl import load_workbook
+from datetime import datetime
 
 from sqlalchemy import create_engine
 from config import engine
-
 
 import pandas as pd
 
 
 
-from openpyxl import load_workbook
-
-from datetime import datetime
+from .functions import eq_usage_file_check
 
 
 
@@ -26,6 +25,10 @@ def index():
 
 @main_bp.route('/db', methods=['GET', 'POST'])
 def dbutil():
+    
+
+
+    
 
     if request.method == 'POST':        
         if 'eq_cat_update' in request.form:
@@ -72,55 +75,21 @@ def dbutil():
                 return render_template('main/dbutil.html', check=check)
             
             
-
+    
                   
-        if 'eq_usage_import' in request.form:
+    if 'eq_usage_import' in request.form:
             
             # Check that the file is correct:
 
-            usage_file = request.files['EqUsageFile']
+            eq_usage_file = request.files['EqUsageFile']
+
+            file_check = eq_usage_file_check(eq_usage_file)
+
+            flash(file_check)
             
-            df = pd.read_excel(usage_file, nrows=2)
             
-            col_00 = df.columns[0]
-            col_06 = df.columns[6]
-            col_08 = df.columns[8]
-            col_09 = df.columns[9]
-            col_17 = df.columns[17]
-
-            check_columns = (col_00 == 'sort_order_no' and col_06 == 'equipment_no'
-                             and col_08 == 'date_booked' and col_09 == 'job_no' 
-                             and col_17 == 'equipment_units')
             
-            if check_columns:
-                flash('File is OK')
-                print('OK')
-
-                extg_data = EqUsage.query.order_by(EqUsage.date_booked)
                 
-                
-
-
-                
-                
-
-                
-
-                #add.to_sql('eq_usage', engine, if_exists='append', index=False)
-
-
-                   
-                
-
-                return render_template('main/dbutil.html',  check=check_columns, extg_data=extg_data)
-            
-            else:
-                flash('Not OK')
-
-
-        
-    
-   
     return render_template('main/dbutil.html')
 
     
