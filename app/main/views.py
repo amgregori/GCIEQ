@@ -15,7 +15,7 @@ import pandas as pd
 
 
 
-from .functions import eq_usage_file_check
+from .functions import eq_usage_file_check, eq_usage_import
 
 
 
@@ -85,7 +85,12 @@ def dbutil():
 
             file_check = eq_usage_file_check(eq_usage_file)
 
-            flash(file_check)
+            if file_check == 'OK':
+
+                imported_rows = eq_usage_import(eq_usage_file)
+
+                flash(imported_rows)
+                flash(eq_usage_file.filename)
             
             
             

@@ -31,3 +31,46 @@ def eq_usage_file_check(eq_usage_file):
 
     return check
 
+
+def eq_usage_import(eq_usage_file):
+    # 01 - Import Equipment Usage Data
+    eq_usage_df_raw = pd.read_excel(eq_usage_file)
+    eq_usage_df = eq_usage_df_raw[[ 'equipment_no', 'transaction_no','date_booked', 'job_no', 'equipment_units', 'cost_code_no']].copy()
+
+    today = date.today()
+    eq_usage_df['date_modified'] = today
+
+
+    # 02 - Clean Up & Format Import Data
+    eq_usage_df['job_no'] = eq_usage_df['job_no'].astype(str)
+    eq_usage_df['cost_code_no'] = eq_usage_df['cost_code_no'].astype(str)
+    eq_usage_df['cost_code_no'] = eq_usage_df['cost_code_no'].apply(lambda x: x.replace(' ', ''))
+    eq_usage_df['equipment_no'] = eq_usage_df['equipment_no'].apply(lambda x: x.replace(' ', ''))
+    eq_usage_df['date_booked'] = eq_usage_df['date_booked'].dt.date
+
+
+    # 03 - Query Transaction Numbers that Exist in the DB
+    transaction_df_raw = pd.read_sql_table('eq_usage', engine)
+    transaction_df = transaction_df_raw[['transaction_no']].copy()
+    transaction_list = transaction_df['transaction_no'].unique()
+
+
+    #05 - Remove import_df Rows with Transaction Numbers that Appear in the Database
+    rows_to_drop = eq_usage_df['transaction_no'].isin(transaction_df.loc[:, 'transaction_no'])
+    eq_usage_df = eq_usage_df[~rows_to_drop]
+
+    eq_usage_df.to_excel('eq_import.xlsx')
+
+
+    #06 - Add New Transactions to Database
+
+    #eq_usage_df.to_sql('eq_usage', engine, if_exists='append', index=False)
+
+    return(len(eq_usage_df))
+
+
+
+
+
+
+    
