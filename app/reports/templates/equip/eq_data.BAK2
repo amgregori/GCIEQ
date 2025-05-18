@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header>Equipment Data</header>
+</br>
+
+<section class="cont">
+  <div>
+    {{form.hidden_tag() }}
+    {{form.eqid.label ()}}
+    {{form.eqid(style="width:60px;", value=eq_piece.eqid)}}
+  </div>
+  <div>
+    {{form.hidden_tag() }}
+    {{form.year(style="width:60px;", value=eq_piece.yr)}}
+  </div>
+  <div>
+    {{form.hidden_tag() }}
+    {{form.make(style="width:200px;", value=eq_piece.make)}}
+  </div>
+  <div>
+    {{form.hidden_tag() }}
+    {{form.model(style="width:200px;", value=eq_piece.model)}}
+  </div>
+  <div>
+    {{form.hidden_tag() }}
+    {{form.cat(style="width:200px; height=30px;", value=eq_piece.eqcat)}}
+  </div>
+</section>   
+
+<hr style="margin-right: 10px; margin-left: 10px; height: 4px">
+<section class="cont">
+  <div>
+    {{form.hidden_tag() }}
+    {{form.sn.label(style="width:150px; margin-left:50px;text-align:right;")}}
+    {{form.model(style="width:200px; text-align:right;", value=eq_piece.sn)}}
+  </div>
+  <div>
+    {{form.hidden_tag() }}
+    {{form.purch_meter.label(style="width:150px; margin-left:50px;")}}
+    {{form.model(style="width:200px; text-align:right;", value=eq_piece.purch_meter)}}
+  </div>
+</section>
+<section class="cont">
+  <div>
+    {{form.hidden_tag() }}
+    {{form.loc.label(style="width:150px; margin-left:50px;text-align:right;")}}
+    {{form.model(style="width:200px;text-align:right;", value=eq_piece.loc)}}
+  </div>
+  <div>
+    {{form.hidden_tag() }}
+    {{form.meter_act.label(style="width:150px; margin-left:50px;")}}
+    {{form.model(style="width:200px; text-align:right;", value=eq_piece.meter_act)}}
+  </div>
+</section>        
+
+<hr style="margin-right: 10px; margin-left: 10px; height: 1px">     
+
+<section class="cont">
+  <div>
+    {{form.hidden_tag() }}
+    {{form.purch_date.label(style="width:150px; margin-left:50px;text-align:right;")}}
+    {{form.model(style="width:200px;text-align:right;", value=eq_piece.purch_date)}}
+  </div>
+  <div>
+    {{form.hidden_tag() }}
+    {{form.meter_act.label(style="width:150px; margin-left:50px;")}}
+    {{form.model(style="width:200px; text-align:right;", value=eq_piece.meter_act)}}
+  </div>
+</section>
+<section class="cont">
+  <div>
+    {{form.hidden_tag() }}
+    {{form.purch_price.label(style="width:150px; margin-left:50px;text-align:right;")}}
+    {{form.model(style="width:200px;text-align:right;", value=eq_piece.purch_price)}}
+  </div>
+  <div>
+    {{form.hidden_tag() }}
+    {{form.meter_job.label(style="width:150px; margin-left:50px;")}}
+    {{form.model(style="width:200px; text-align:right;", value=eq_piece.meter_job)}}
+  </div>
+</section>
+       
+
+      
+{% endblock %}
+
+
+
+

@@ -1,0 +1,59 @@
+<!--{% extends 'base.html' %}
+
+{% block content %}
+    {% for message in get_flashed_messages() %}
+        {{ message }}
+    {% endfor %}
+
+-->
+  <header>Equipment Data</header>
+      <form action="/equip.eq_edit/{{eqid}}" methods="POST">
+
+        <section>
+          <div style="background-color: rgb(245, 207, 207);">Top 01</div>
+          <div style="background-color: rgb(247, 173, 173);">Top 02 </div>
+          <div style="background-color: rgb(241, 146, 146);">Top 03</div>
+          <div style="background-color: rgb(172, 119, 119);">Top 04</div>
+          <div style="background-color: rgb(112, 73, 73);">Top 05</div>
+        </section>      
+        
+        <hr style="margin-right: 10px; margin-left: 10px; height: 4px"></hr>
+        
+        <section>     
+          <div style="background-color: rgb(231, 221, 238);">Bot 01</div>
+          <div style="background-color: rgb(228, 194, 241);">Bot 02</div>
+          <div style="background-color: rgb(149, 150, 151);">Bot 03</div>
+          <div style="background-color: rgb(142, 150, 177);">Bot 04</div>
+        </section>
+
+      </form>
+
+
+
+
+
+<!--
+<form action="/equip.eq_edit/{{eqid}}" methods="POST">
+    
+        <div style="background-color: blueviolet;" style="margin-right: 100px; height: 250px;">
+          
+          <div class="col-xs-1">
+            {{ form.hidden_tag() }}
+            {{ form.eqid(class="form-control", cols="1", value=eq_piece.eqid)}}
+          </div>
+          <div class="col-xs-1">
+            {{ form.hidden_tag() }}
+            {{ form.year(class="form-control", cols="1", value=eq_piece.yr)}}
+          </div class="col-xs-2">
+          <div>
+            {{ form.hidden_tag() }}
+            {{ form.cat}}
+          </div>
+        </div>
+      
+</form>
+
+
+{% endblock %}
+
+-->

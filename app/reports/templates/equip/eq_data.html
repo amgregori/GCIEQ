@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+  {% block content %}
+
+    {% for message in get_flashed_messages() %}
+      {{ message }}
+    {% endfor %}
+
+<div class="form-container" style="display: flex; justify-content: center; padding:10px">
+  <fieldset style="max-width: 1000px; align-items: center; margin: 10px;">
+    <legend style="font-family: 'Times New Roman', Times, serif;">Equipment Single-Piece Data
+      
+    </legend>
+    
+      <form action="{{url_for('equip.eq_edit', eqid = eq_piece.eqid)}}"  method="POST">
+      </br>
+      <div style="float:right;">{{form.submit(class="btn btn-primary btn-sm")}}</div>
+      </br>
+      </br>
+        
+       
+        <div class="row">
+          <div class="col data-label" style="min-width: 100px; text-align: center;margin-left: 10px;"><label>ID:</label></div>
+          <div class="col data-label" style="text-align: center;"><label>Year:</label></div>
+          <div class="col data-label" style="min-width: 150px; text-align: center;"><label>Make:</label></div>
+          <div class="col data-label" style="min-width: 150px; text-align: center;"><label>Model:</label></div>
+          <div class="col data-label" style="min-width: 250px; padding-right:20px; text-align: center;"><label>Category:</label></div>
+        </div>
+        
+        <div class="row">
+          <div class="col data-label" style="border-style: outset; min-width: 100px; text-align: center;margin-left: 10px;">{{eq_piece.eqid}}</div>
+          <div class="col data-label" style="border-style: outset; min-width: 100px; text-align: right;">
+            {{form.hidden_tag() }}
+            {{form.year(style="width:150px; border-style:none; text-align:right; float: right;", value=eq_piece.yr)}}</div>
+          <div class="col data-label" style="border-style: outset; min-width: 150px; text-align: right;">
+            {{form.hidden_tag() }}
+            {{form.make(style="width:150px; border-style:none; text-align:right; float: right;", value=eq_piece.make)}}</div>
+          <div class="col data-label" style="border-style: outset; min-width: 150px; text-align: right;">
+            {{form.hidden_tag() }}
+            {{form.model(style="width:150px; border-style:none; text-align:right; float: right;", value=eq_piece.model)}}</div>
+          <div class="col data-label" style="min-width: 250px;">
+            {{form.hidden_tag() }}
+            {{form.cat(style="width:200px; font-size:16px; height=45px; float:right; margin-top: 3px;", value=eq_piece.eqcat)}} </div>
+        </div>
+      <hr>
+        <div class="row">
+          <div class="col-sm-2" style="min-width: 150px;"></div>
+          <div class="col data-label" style="min-width: 150px;">
+            {{form.hidden_tag() }}
+            {{form.sn.label(style="width:150px; float:center; text-align:right;")}} 
+            {{form.sn(style="width:150px; text-align:right; float: right;", value=eq_piece.sn)}}
+          </div>
+          <div class="col data-label" style="min-width: 150px;">
+            {{form.hidden_tag() }}
+            {{form.purch_meter.label(style="width:150px; float:center; text-align:right")}}
+            {{form.purch_meter(style="width:150px; text-align:right; float:right", value=eq_piece.purch_meter)}}  
+          </div>
+          <div class="col-sm-2" style="min-width: 150px;"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2" style="min-width: 150px;"></div>
+          <div class="col data-label" style="min-width: 150px;">
+            {{form.hidden_tag() }}
+            {{form.loc.label(style="width:150px; float:center; text-align:right;")}}
+            {{form.loc(style="width:150px; text-align:right; float: right;", value=eq_piece.loc)}}
+          </div>
+          <div class="col data-label" style="min-width: 150px;">
+            {{form.hidden_tag() }}
+            {{form.meter_act.label(style="width:150px; float:center; text-align:right;")}}
+            {{form.meter_act(style="width:150px; text-align:right; float:right", value=eq_piece.meter_act)}}  
+          </div>
+          <div class="col-sm-2" style="min-width: 150px;"></div>
+        </div>
+      <hr>
+        <div class="row">
+          <div class="col-sm-2" style="min-width: 150px;"></div>
+          <div class="col data-label" style="min-width: 150px;">
+            {{form.hidden_tag() }}
+            {{form.purch_date.label(style="width:150px; float:center; text-align:right;")}}
+            {{form.purch_date(style="width:150px; text-align:right; float: right;", value=eq_piece.purch_date)}}
+          </div>
+          <div class="col data-label" style="min-width: 150px;">
+            {{form.hidden_tag() }}
+            {{form.cur_depr.label(style="width:150px; float:center; text-align:right; ")}}
+            {{form.cur_depr(style="width:150px; text-align:right; float:right", value=eq_piece.cur_depr)}}  
+          </div>
+          <div class="col-sm-2" style="min-width: 150px;"></div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2" style="min-width: 150px;"></div>
+          <div class="col data-label" style="min-width: 150px;">
+            {{form.hidden_tag() }}
+            {{form.purch_price.label(style="width:150px; float:center; text-align:right;")}}
+            {{form.purch_price(style="width:150px; text-align:right; float: right;", value=eq_piece.purch_price)}}
+          </div>
+          <div class="col data-label" style="min-width: 150px;">
+            {{form.hidden_tag() }}
+            {{form.cur_rate.label(style="width:150px; float:center; text-align:right; ")}}
+            {{form.cur_rate(style="width:150px; text-align:right; float:right", value=eq_piece.cur_rate)}}  
+          </div>
+          <div class="col-sm-2" style="min-width: 150px;"></div>
+        </div>
+      <hr>
+        <div class="row">
+          <div class="col data-label" style="min-width: 150px;"></div>
+          <div class="col data-label">
+            <label style="vertical-align: top;">Note:</label>
+            <textarea name="note" rows="10" cols="70" value={{eq_piece.note}}>{{eq_piece.note}}</textarea>
+          </div>
+          <div class="col-sm-2" style="min-width: 150px;"></div>
+        </div>
+
+
+
+
+
+        
+        
+    </form>
+  </fieldset>
+</div>
+ 
+{% endblock %}
+
+
+
+

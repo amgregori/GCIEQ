@@ -45,14 +45,14 @@ def create_app():
     return app
 
 def register_blueprints(app):
-    from app.auth import auth_bp
-    
-    from app.main import main_bp
-    from app.equip import equip_bp
-    
-    
+    from app.auth import bp_auth
+    from app.eq_cost import bp_eq_cost
+    from app.eq_use import bp_eq_use
+    from app.main import bp_main
+    from app.reports import bp_report  
 
-    app.register_blueprint(auth_bp, url_prefix='/users')
-   
-    app.register_blueprint(equip_bp, url_prefix='/equip')
-    app.register_blueprint(main_bp)
+    app.register_blueprint(bp_auth, url_prefix='/login')
+    app.register_blueprint(bp_eq_cost, url_prefix='/eq_cost')
+    app.register_blueprint(bp_eq_use, url_prefix='/eq_use')
+    app.register_blueprint(bp_main)
+    app.register_blueprint(bp_report, url_prefix='/report')

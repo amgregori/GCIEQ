@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+  {% block content %}
+    {% for message in get_flashed_messages() %}
+      {{ message }}
+    {% endfor %}
+<h1>Main Index Page. Success!</h1>
+
+<!--
+
+<a href="{{url_for('auth.register')}}">Registration Page</a>
+-->
+
+
+<a href="{{url_for('equip.equip_main')}}">Equipment</a><br/>
+<a href="{{url_for('equip.eq_data')}}">Equipment Data</a><br/>
+<a href="{{url_for('main.dbutil')}}">DB Utilities</a>
+
+
+
+ 
+
+
+
+{% endblock %}

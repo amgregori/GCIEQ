@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% for message in get_flashed_messages() %}
+        {{ message }}
+    {% endfor %}
+
+<div class="container">
+  <header>Equipment Data</header>
+      <form action="/equip.eq_edit/{{eqid}}" methods="POST">
+          <div class="form first">
+            <div class="details eq_piece" >
+
+             
+          
+              <div class="fields">
+                <div class="input-field eqid">
+                  {{ form.hidden_tag() }}
+                  {{form.eqid.label ()}}
+                  {{ form.eqid(style="width:60px; height:30px; margin-top:15px", value=eq_piece.eqid)}}  &nbsp; &nbsp;
+                </div>
+                <div class="input-field">
+                  {{ form.hidden_tag() }}
+                  {{ form.year(style="width:60px; height:30px; margin-top:15px", value=eq_piece.yr)}} &nbsp;
+                </div>
+                <div class="input-field">
+                  {{ form.hidden_tag() }}
+                  {{ form.make(style="width:200px; height:30px; margin-top:15px", value=eq_piece.make)}} &nbsp;
+                </div>
+                <div class="input-field">
+                  {{ form.hidden_tag() }}
+                  {{ form.model(style="width:200px; height:30px; margin-top:15px", value=eq_piece.model)}} &nbsp;
+                </div>
+                <div class="input-field">
+                  {{ form.hidden_tag() }}
+                  {{ form.cat(style="width:200px; height:30px; margin-top:15px", value=eq_piece.eqcat)}}
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <hr style="margin-right: 10px; margin-left: 10px; height: 4px">
+            <div class="details eq_piece">
+              <div class="fields">
+                <div class="input-field" style="float: left; background-color: rgb(213, 175, 240); width:50%;">
+                  {{ form.hidden_tag() }}
+                  {{form.sn.label(style="width:150px; margin-left:50px;text-align:right;")}}
+                  {{ form.model(style="width:200px; height:30px; margin-left:30px; text-align:right;", value=eq_piece.sn)}}
+                </div>
+                <div class="input-field" style="float: right;background-color: rgb(238, 199, 212); width:50%;">
+                  {{ form.hidden_tag() }}
+                  {{form.purch_meter.label(style="width:150px; margin-left:50px;")}}
+                  {{ form.model(style="width:200px; height:30px; margin-left:30px; text-align:right;", value=eq_piece.purch_meter)}}
+                </div>
+                </div>
+                <div class="fields">
+                  <div class="input-field" style="float:left; background-color: rgb(174, 84, 238); width:50%;">
+                    {{ form.hidden_tag() }}
+                    {{form.loc.label(style="width:150px; margin-left:50px; text-align:right;")}}
+                    {{ form.model(style="width:200px; height:30px; margin-left:30px; text-align:right;", value=eq_piece.loc)}}
+                  </div>
+                  <div class="input-field" style="float: right;background-color: rgb(166, 150, 240); width:50%;">
+                    {{ form.hidden_tag() }}
+                    {{form.meter_act.label(style="width:150px; margin-left:50px;")}}
+                    {{ form.model(style="width:200px; height:30px; margin-left:30px; text-align:right;", value=eq_piece.meter_act)}}
+                  </div>
+                </div>
+              </div>
+            
+          <hr style="margin-right: 10px; margin-left: 10px; height: 4px">
+            <div class="details eq_piece">
+              <div class="fields">
+                <div class="input-field" style="float: left; background-color: rgb(39, 236, 89); width:50%;">
+                  {{ form.hidden_tag() }}
+                  {{form.purch_date.label(style="width:150px; margin-left:50px;text-align:right;")}}
+                  {{ form.model(style="width:200px; height:30px; margin-left:30px; text-align:right;", value=eq_piece.purch_date)}}
+                </div>
+                <div class="input-field" style="float: right; background-color: rgb(143, 187, 39); width:50%;">
+                  {{ form.hidden_tag() }}
+                  {{form.meter_job.label(style="width:150px; margin-left:50px;")}}
+                  {{ form.model(style="width:200px; height:30px; margin-left:30px; text-align:right;", value=eq_piece.meter_job)}}
+                </div>
+                </div>
+                <div class="fields">
+                  <div class="input-field" style="float:left; background-color: rgb(219, 120, 27); width:50%;">
+                    {{ form.hidden_tag() }}
+                    {{form.loc.label(style="width:150px; margin-left:50px; text-align:right;")}}
+                    {{ form.model(style="width:200px; height:30px; margin-left:30px; text-align:right;", value=eq_piece.loc)}}
+                  </div>
+                  <div class="input-field" style="float: right;background-color: rgb(243, 92, 92); width:50%;">
+                    {{ form.hidden_tag() }}
+                    {{form.meter_act.label(style="width:150px; margin-left:50px;")}}
+                    {{ form.model(style="width:200px; height:30px; margin-left:30px; text-align:right;", value=eq_piece.meter_act)}}
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+             </div>
+        
+
+      
+    
+
+      </form>
+
+
+</div>
+
+
+<!--
+<form action="/equip.eq_edit/{{eqid}}" methods="POST">
+    
+        <div style="background-color: blueviolet;" style="margin-right: 100px; height: 250px;">
+          
+          <div class="col-xs-1">
+            {{ form.hidden_tag() }}
+            {{ form.eqid(class="form-control", cols="1", value=eq_piece.eqid)}}
+          </div>
+          <div class="col-xs-1">
+            {{ form.hidden_tag() }}
+            {{ form.year(class="form-control", cols="1", value=eq_piece.yr)}}
+          </div class="col-xs-2">
+          <div>
+            {{ form.hidden_tag() }}
+            {{ form.cat}}
+          </div>
+        </div>
+      
+</form>
+-->
+
+{% endblock %}
+
